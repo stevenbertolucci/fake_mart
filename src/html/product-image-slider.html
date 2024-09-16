@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Shopper"}}
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> navbars/navbar-topbar classList="bg-light"}}
+
+    <!-- NAVBAR -->
+    {{> navbars/navbar classList="bg-white border-bottom"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb mb-0 fs-xs text-gray-400">
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="shop.html">Bags & Accessories</a>
+              </li>
+              <li class="breadcrumb-item active">
+                Geometric print Scarf
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PRODUCT -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-6">
+
+                <!-- Slider -->
+                <div class="flickity-buttons-offset mb-10 mb-md-0" data-flickity='{"prevNextButtons": true, "pageDots": true}'>
+
+                  <!-- Item -->
+                  <div class="w-100">
+                    <div class="row gx-5">
+                      <div class="col-6">
+
+                        <!-- Image -->
+                        <a href="#" data-bigpicture='{ "imgSrc": "assets/img/products/product-153.jpg"}'>
+                          <img class="img-fluid" src="assets/img/products/product-153.jpg" alt="...">
+                        </a>
+
+                      </div>
+                      <div class="col-6">
+
+                        <!-- Image -->
+                        <a href="#" data-bigpicture='{ "imgSrc": "assets/img/products/product-154.jpg"}'>
+                          <img class="img-fluid" src="assets/img/products/product-154.jpg" alt="...">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="w-100">
+                    <div class="row gx-5">
+                      <div class="col-6">
+
+                        <!-- Image -->
+                        <a href="#" data-bigpicture='{ "imgSrc": "assets/img/products/product-155.jpg"}'>
+                          <img class="img-fluid" src="assets/img/products/product-155.jpg" alt="...">
+                        </a>
+
+                      </div>
+                      <div class="col-6">
+
+                        <!-- Image -->
+                        <a href="#" data-bigpicture='{ "imgSrc": "assets/img/products/product-156.jpg"}'>
+                          <img class="img-fluid" src="assets/img/products/product-156.jpg" alt="...">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6 ps-lg-10">
+
+                <!-- Header -->
+                <div class="row mb-1">
+                  <div class="col">
+
+                    <!-- Preheading -->
+                    <a class="text-muted" href="shop.html">Accessories</a>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Rating -->
+                    <div class="rating fs-xs text-dark">
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="rating-item">
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+
+                    <a class="fs-sm text-reset ms-2" href="#reviews">
+                      Reviews (0)
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Heading -->
+                <h3 class="mb-2">Geometric print Scarf</h3>
+
+                <!-- Price -->
+                <div class="mb-7">
+                  <span class="ms-1 fs-5 fw-bold">$19.00</span>
+                  <span class="ms-1 fs-sm">(In Stock)</span>
+                </div>
+
+                <!-- Form -->
+                <form>
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <p class="mb-4">
+                      Color: <strong id="colorCaption">Red</strong>
+                    </p>
+
+                    <!-- Radio -->
+                    <div class="mb-8 ms-n1">
+                      <div class="form-check form-check-inline form-check-img">
+                        <input type="radio" class="form-check-input" id="imgRadioOne" name="imgRadio" data-toggle="form-caption" data-target="#colorCaption" value="Red" style="background-image: url(assets/img/products/product-151.jpg);" checked>
+                      </div>
+                      <div class="form-check form-check-inline form-check-img">
+                        <input type="radio" class="form-check-input" id="imgRadioTwo" name="imgRadio" data-toggle="form-caption" data-target="#colorCaption" value="Green" style="background-image: url(assets/img/products/product-152.jpg);">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <div class="row gx-5 mb-7">
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Quantity -->
+                        <select class="form-select mb-2">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+
+                      </div>
+                      <div class="col-12 col-lg">
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn w-100 btn-dark mb-2">
+                          Add to Cart <i class="fe fe-shopping-cart ms-2"></i>
+                        </button>
+
+                      </div>
+                      <div class="col-12 col-lg-auto">
+
+                        <!-- Wishlist -->
+                        <button class="btn btn-outline-dark w-100 mb-2" data-toggle="button">
+                          Wishlist <i class="fe fe-heart ms-2"></i>
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p>
+                      <span class="text-gray-500">Is your size/color sold out?</span>
+                      <a class="text-reset text-decoration-underline" data-bs-toggle="modal" href="#modalWaitList">Join the Wait List!</a>
+                    </p>
+
+                    <!-- Share -->
+                    <p class="mb-0">
+                      <span class="me-4">Share:</span>
+                      <a class="btn btn-xxs btn-circle btn-light fs-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a class="btn btn-xxs btn-circle btn-light fs-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a class="btn btn-xxs btn-circle btn-light fs-xxxs text-gray-350" href="#!">
+                        <i class="fab fa-pinterest-p"></i>
+                      </a>
+                    </p>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="pt-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Nav -->
+            <div class="nav nav-tabs nav-overflow justify-content-start justify-content-md-center border-bottom">
+              <a class="nav-link active" data-bs-toggle="tab" href="#descriptionTab">
+                Description
+              </a>
+              <a class="nav-link" data-bs-toggle="tab" href="#shippingTab">
+                Shipping & Return
+              </a>
+            </div>
+
+            <!-- Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="descriptionTab">
+                <div class="row justify-content-center py-9">
+                  <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div class="col-12">
+
+                        <!-- Text -->
+                        <p class="text-gray-500">
+                          Won't herb first male seas, beast. Let upon, female upon third fifth every. Man subdue rule after years herb after
+                          form. And image may, morning. Behold in tree day sea that together cattle whose. Fifth gathering brought
+                          bearing. Abundantly creeping whose. Beginning form have void two. A whose.
+                        </p>
+
+                      </div>
+                      <div class="col-12 col-md-6">
+
+                        <!-- List -->
+                        <ul class="list list-unstyled mb-md-0 text-gray-500">
+                          <li>
+                            <strong class="text-body">SKU</strong>: #61590437
+                          </li>
+                          <li>
+                            <strong class="text-body">Occasion</strong>: Lifestyle, Sport
+                          </li>
+                          <li>
+                            <strong class="text-body">Country</strong>: Italy
+                          </li>
+                        </ul>
+
+                      </div>
+                      <div class="col-12 col-md-6">
+
+                        <!-- List -->
+                        <ul class="list list-unstyled mb-0">
+                          <li>
+                            <strong>Outer</strong>: Leather 100%, Polyamide 100%
+                          </li>
+                          <li>
+                            <strong>Lining</strong>: Polyester 100%
+                          </li>
+                          <li>
+                            <strong>CounSoletry</strong>: Rubber 100%
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="shippingTab">
+                <div class="row justify-content-center py-9">
+                  <div class="col-12 col-lg-10 col-xl-8">
+
+                    <!-- Table -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-sm table-hover">
+                        <thead>
+                          <tr>
+                            <th>Shipping Options</th>
+                            <th>Delivery Time</th>
+                            <th>Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Standard Shipping</td>
+                            <td>Delivery in 5 - 7 working days</td>
+                            <td>$8.00</td>
+                          </tr>
+                          <tr>
+                            <td>Express Shipping</td>
+                            <td>Delivery in 3 - 5 working days</td>
+                            <td>$12.00</td>
+                          </tr>
+                          <tr>
+                            <td>1 - 2 day Shipping</td>
+                            <td>Delivery in 1 - 2 working days</td>
+                            <td>$12.00</td>
+                          </tr>
+                          <tr>
+                            <td>Free Shipping</td>
+                            <td>
+                              Living won't the He one every subdue meat replenish
+                              face was you morning firmament darkness.
+                            </td>
+                            <td>$0.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Caption -->
+                    <p class="mb-0 text-gray-500">
+                      May, life blessed night so creature likeness their, for. <a class="text-body text-decoration-underline" href="#!">Find out more</a>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="pt-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Heading -->
+            <h4 class="mb-10 text-center">You might also like</h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="flickity-page-dots-progress" data-flickity='{"pageDots": true}'>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-6.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Cotton floral print Dress</a> <br>
+              <span class="text-muted">$40.00</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Badge -->
+              <span class="badge bg-dark card-badge card-badge-start text-uppercase">
+                Sale
+              </span>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-10.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Suede cross body Bag</a> <br>
+              <span class="fs-xs text-gray-350 text-decoration-line-through">$85.00</span>
+              <span class="text-primary">$49.00</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-32.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Cotton leaf print Shirt</a> <br>
+              <span class="text-muted">$65.00</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-7.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Leather Sneakers</a> <br>
+              <a class="text-primary" href="#">Select Options</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-11.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Another fine dress</a> <br>
+              <span class="text-muted">$99.00</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-33.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Baseball Cap</a> <br>
+              <span class="text-muted">$10.00</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="col px-4" style="max-width: 300px;">
+          <div class="card">
+
+            <!-- Image -->
+            <div class="card-img">
+
+              <!-- Action -->
+              <button class="btn btn-xs btn-circle btn-white-primary card-action card-action-end" data-toggle="button">
+                <i class="fe fe-heart"></i>
+              </button>
+
+              <!-- Button -->
+              <button class="btn btn-xs w-100 btn-dark card-btn" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                <i class="fe fe-eye me-2 mb-1"></i> Quick View
+              </button>
+
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/products/product-49.jpg" alt="...">
+
+            </div>
+
+            <!-- Body -->
+            <div class="card-body fw-bold text-center">
+              <a class="text-body" href="product.html">Leather sneakers</a> <br>
+              <span class="text-muted">$19.00</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="py-11" id="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Heading -->
+            <h4 class="mb-10 text-center">Customer Reviews</h4>
+
+            <!-- No reviews -->
+            <div class="text-center">
+
+              <!-- Icon -->
+              <div class="mb-6 fs-1">🙁</div>
+
+              <!-- Text -->
+              <p>
+                No reviews have been published.
+                Place an order first now to write a review.
+              </p>
+
+              <!-- Button-->
+              <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#reviewForm">
+                Write Review
+              </a>
+
+            </div>
+
+            <!-- New Review -->
+            <div class="collapse" id="reviewForm">
+
+              <!-- Divider -->
+              <hr class="my-8">
+
+              <!-- Form -->
+              <form>
+                <div class="row">
+                  <div class="col-12 mb-6 text-center">
+
+                    <!-- Text -->
+                    <p class="mb-1 fs-xs">
+                      Score:
+                    </p>
+
+                    <!-- Rating form -->
+                    <div class="rating-form">
+
+                      <!-- Input -->
+                      <input class="rating-input" type="range" min="1" max="5" value="5">
+
+                      <!-- Rating -->
+                      <div class="rating h5 text-dark" data-value="5">
+                        <div class="rating-item">
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-item">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewName">Your Name:</label>
+                      <input class="form-control form-control-sm" id="reviewName" type="text" placeholder="Your Name *" required>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewEmail">Your Email:</label>
+                      <input class="form-control form-control-sm" id="reviewEmail" type="email" placeholder="Your Email *" required>
+                    </div>
+
+                  </div>
+                  <div class="col-12">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewTitle">Review Title:</label>
+                      <input class="form-control form-control-sm" id="reviewTitle" type="text" placeholder="Review Title *" required>
+                    </div>
+
+                  </div>
+                  <div class="col-12">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="reviewText">Review:</label>
+                      <textarea class="form-control form-control-sm" id="reviewText" rows="5" placeholder="Review *" required></textarea>
+                    </div>
+
+                  </div>
+                  <div class="col-12 text-center">
+
+                    <!-- Button -->
+                    <button class="btn btn-outline-dark" type="submit">
+                      Post Review
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="bg-light py-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+
+            <!-- Item -->
+            <div class="d-flex mb-6 mb-lg-0">
+
+              <!-- Icon -->
+              <i class="fe fe-truck fs-lg text-primary"></i>
+
+              <!-- Body -->
+              <div class="ms-6">
+
+                <!-- Heading -->
+                <h6 class="heading-xxs mb-1">
+                  Free shipping
+                </h6>
+
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-muted">
+                  From all orders over $100
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+
+            <!-- Item -->
+            <div class="d-flex mb-6 mb-lg-0">
+
+              <!-- Icon -->
+              <i class="fe fe-repeat fs-lg text-primary"></i>
+
+              <!-- Body -->
+              <div class="ms-6">
+
+                <!-- Heading -->
+                <h6 class="mb-1 heading-xxs">
+                  Free returns
+                </h6>
+
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-muted">
+                  Return money within 30 days
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+
+            <!-- Item -->
+            <div class="d-flex mb-6 mb-md-0">
+
+              <!-- Icon -->
+              <i class="fe fe-lock fs-lg text-primary"></i>
+
+              <!-- Body -->
+              <div class="ms-6">
+
+                <!-- Heading -->
+                <h6 class="mb-1 heading-xxs">
+                  Secure shopping
+                </h6>
+
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-muted">
+                  You're in safe hands
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+
+            <!-- Item -->
+            <div class="d-flex">
+
+              <!-- Icon -->
+              <i class="fe fe-tag fs-lg text-primary"></i>
+
+              <!-- Body -->
+              <div class="ms-6">
+
+                <!-- Heading -->
+                <h6 class="mb-1 heading-xxs">
+                  Over 10,000 Styles
+                </h6>
+
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-muted">
+                  We have everything you need
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    {{> footers/footer}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </body>
+</html>

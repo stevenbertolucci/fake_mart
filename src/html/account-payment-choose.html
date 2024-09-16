@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Shopper"}}
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> navbars/navbar-topbar classList="bg-light"}}
+
+    <!-- NAVBAR -->
+    {{> navbars/navbar classList="bg-white border-bottom"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb mb-0 fs-xs text-gray-400">
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                My Account
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="pt-7 pb-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Heading -->
+            <h3 class="mb-10">My Account</h3>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+
+            <!-- Nav -->
+            {{> navs/account-nav page="account-payment.html"}}
+
+          </div>
+          <div class="col-12 col-md-9 col-lg-8 offset-lg-1">
+
+            <!-- Form -->
+            <form>
+
+              <!-- Card -->
+              <div class="form-group card card-sm border">
+                <div class="card-body">
+
+                  <!-- Radio -->
+                  <div class="form-check custom-radio">
+
+                    <!-- Input -->
+                    <input class="form-check-input collapsed" id="checkoutPaymentCard" name="payment" type="radio" checked>
+
+                    <!-- Label -->
+                    <label class="form-check-label d-flex justify-content-between w-100 fs-sm text-body text-nowrap" for="checkoutPaymentCard">
+                      I want to add Debit / Credit Card <img class="ms-2" src="assets/img/brands/color/cards.svg" alt="...">
+                    </label>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="form-group card card-sm border">
+                <div class="card-body">
+
+                  <!-- Radio -->
+                  <div class="form-check custom-radio">
+
+                    <!-- Input -->
+                    <input class="form-check-input" id="checkoutPaymentPaypal" name="payment" type="radio">
+
+                    <!-- Label -->
+                    <label class="form-check-label d-flex justify-content-between w-100 fs-sm text-body text-nowrap" for="checkoutPaymentPaypal">
+                      I want to add PayPall <img src="assets/img/brands/color/paypal.svg" alt="...">
+                    </label>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button class="btn btn-dark" type="submit">
+                Continue <i class="fe fe-arrow-right ms-2"></i>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    {{> footers/footer}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </body>
+</html>
