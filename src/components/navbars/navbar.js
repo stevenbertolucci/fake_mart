@@ -20,45 +20,45 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
 
           {/* Nav */}
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" data-bs-toggle="dropdown" href="#">Home</a>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Home</a>
 
               {/* Menu */}
               {/* Replace this with a HomeDropdown component */}
               {/* <HomeDropdown /> */}
             </li>
             
-            <li className="nav-item dropdown position-static">
+            <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" data-bs-toggle="dropdown" href="#">Catalog</a>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Catalog</a>
 
               {/* Menu */}
               {/* Replace this with a CatalogDropdown component */}
               {/* <CatalogDropdown /> */}
             </li>
             
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" data-bs-toggle="dropdown" href="#">Shop</a>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Shop</a>
 
               {/* Menu */}
               {/* Replace this with a ShopDropdown component */}
               {/* <ShopDropdown /> */}
             </li>
             
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" data-bs-toggle="dropdown" href="#">Pages</a>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Pages</a>
 
               {/* Menu */}
               {/* Replace this with a PagesDropdown component */}
               {/* <PagesDropdown /> */}
             </li>
             
-            <li className="nav-item dropdown">
+            <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" data-bs-toggle="dropdown" href="#">Blog</a>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</a>
 
               {/* Menu */}
               {/* Replace this with a BlogDropdown component */}
