@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
   return (
@@ -6,9 +7,9 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
       <div className="container">
 
         {/* Brand */}
-        <a className="navbar-brand" href={`${webRoot}/overview.html`}>
+        <Link className="navbar-brand" to={'/'}>
           Bertolucci Enterprise
-        </a>
+        </Link>
 
         {/* Toggler */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +23,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Home</a>
+              <Link className="nav-link" to="/">Home</Link>
 
               {/* Menu */}
               {/* Replace this with a HomeDropdown component */}
@@ -31,7 +32,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Catalog</a>
+              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Catalog</Link>
 
               {/* Menu */}
               {/* Replace this with a CatalogDropdown component */}
@@ -40,7 +41,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Shop</a>
+              <Link className="nav-link" to='/products'>Products</Link>
 
               {/* Menu */}
               {/* Replace this with a ShopDropdown component */}
@@ -49,7 +50,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Pages</a>
+              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Pages</Link>
 
               {/* Menu */}
               {/* Replace this with a PagesDropdown component */}
@@ -58,7 +59,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</a>
+              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</Link>
 
               {/* Menu */}
               {/* Replace this with a BlogDropdown component */}
@@ -66,26 +67,26 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Docs</a>
+              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Docs</Link>
             </li>
           </ul>
 
           {/* Nav */}
           <ul className="navbar-nav flex-row">
             <li className="nav-item">
-              <a className="nav-link" data-bs-toggle="offcanvas" href="#modalSearch">
+              <Link className="nav-link" data-bs-toggle="offcanvas" href="#modalSearch">
                 <i className="fe fe-search"></i>
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-lg-n4">
-              <a className="nav-link" href={`${webRoot}/account-orders.html`}>
+              <Link className="nav-link" href={`${webRoot}/account-orders.html`}>
                 <i className="fe fe-user"></i>
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-lg-n4">
-              <a className="nav-link" href={`${webRoot}/account-wishlist.html`}>
+              <Link className="nav-link" href={`${webRoot}/account-wishlist.html`}>
                 <i className="fe fe-heart"></i>
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-lg-n4">
               <a className="nav-link" data-bs-toggle="offcanvas" href="#modalShoppingCart">
