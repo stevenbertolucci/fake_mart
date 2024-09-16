@@ -6,12 +6,14 @@ import Navbar from "../../components/navbars/navbar";
 import NavbarTopbar from "../../components/navbars/navbar-topbar";
 import Scripts from "../../components/scripts";
 import { Link } from "react-router-dom";
+import { Dropdown, ButtonGroup, Form, Card, Button } from 'react-bootstrap';
 
 const Products = () => {
+
     return (
         <div>
             <head>
-                <Head />
+                <Head title="Bertolucci Enterprise" />
             </head>
 
             {/* <!-- MODALS --> */}
@@ -38,7 +40,7 @@ const Products = () => {
                         <Link className="text-reset" to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active">
-                        Women's Clothing
+                        Products
                     </li>
                     </ol>
 
@@ -54,7 +56,7 @@ const Products = () => {
                 <div className="col-12">
 
                     {/* <!-- Heading --> */}
-                    <h3 className="mb-10 text-center">Women's Clothing</h3>
+                    <h3 className="mb-10 text-center">Products</h3>
 
                 </div>
                 </div>
@@ -63,123 +65,170 @@ const Products = () => {
 
                     {/* <!-- Filters --> */}
                     <div className="btn-group-justified btn-group-expand-lg mb-10" role="group">
+                        <Dropdown as={ButtonGroup}>
+                            <Dropdown.Toggle className="btn-sm w-100 btn-light btn-outline-border">
+                                Sort by
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                            <form>
+                                <div className="card">
+                                    <div className="card-body">
+                                    <div className="form-group-overflow">
+                                        <div className="form-check form-check-text mb-3">
+                                        <input
+                                            className="form-check-input"
+                                            id="sortOne"
+                                            name="sort"
+                                            type="radio"
+                                            value="Default"
+                                        />
+                                        <label className="form-check-label" htmlFor="sortOne">
+                                            Default
+                                        </label>
+                                        </div>
+                                        <div className="form-check form-check-text mb-3">
+                                        <input
+                                            className="form-check-input"
+                                            id="sortTwo"
+                                            name="sort"
+                                            type="radio"
+                                            value="Newest"
+                                        />
+                                        <label className="form-check-label" htmlFor="sortTwo">
+                                            Newest
+                                        </label>
+                                        </div>
+                                        <div className="form-check form-check-text mb-3">
+                                        <input
+                                            className="form-check-input"
+                                            id="sortThree"
+                                            name="sort"
+                                            type="radio"
+                                            value="Most Popular"
+                                        />
+                                        <label className="form-check-label" htmlFor="sortThree">
+                                            Most Popular
+                                        </label>
+                                        </div>
+                                        <div className="form-check form-check-text mb-3">
+                                        <input
+                                            className="form-check-input"
+                                            id="sortFour"
+                                            name="sort"
+                                            type="radio"
+                                            value="Default Price"
+                                        />
+                                        <label className="form-check-label" htmlFor="sortFour">
+                                            Default Price
+                                        </label>
+                                        </div>
+                                        <div className="form-check form-check-text">
+                                        <input
+                                            className="form-check-input"
+                                            id="sortFive"
+                                            name="sort"
+                                            type="radio"
+                                            value="Highest Price"
+                                        />
+                                        <label className="form-check-label" htmlFor="sortFive">
+                                            Highest Price
+                                        </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    
+                        <Dropdown as={ButtonGroup}>
+                            <Dropdown.Toggle className="btn-sm w-100 btn-light btn-outline-border" >
+                                Category
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu as={Card} className="p-0" style={{ backgroundColor: 'white' }}>
+                                <Card.Body>
+                                <Form>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categoryOne"
+                                        label="All Products"
+                                        value="All Products"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categoryTwo"
+                                        label="Blouses and Shirts"
+                                        value="Blouses and Shirts"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categoryThree"
+                                        label="Coats and Jackets"
+                                        value="Coats and Jackets"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categoryFour"
+                                        label="Dresses"
+                                        value="Dresses"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categoryFive"
+                                        label="Hoodies and Sweats"
+                                        value="Hoodies and Sweats"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categorySix"
+                                        label="Denim"
+                                        value="Denim"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3">
+                                    <Form.Check
+                                        type="checkbox"
+                                        id="categorySeven"
+                                        label="Hoodies and Sweats"
+                                        value="Hoodies and Sweats"
+                                        name="category"
+                                    />
+                                    </Form.Group>
+                                </Form>
+                                </Card.Body>
+                                <Card.Footer className="d-flex flex-nowrap border-top">
+                                <Button variant="outline-dark" size="sm" type="reset">
+                                    Clear
+                                </Button>
+                                <Button variant="dark" size="sm" className="ms-2" type="submit">
+                                    Show Results
+                                </Button>
+                                </Card.Footer>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     <div className="btn-group dropdown">
 
                         {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
-                        Sort by
-                        </button>
-
-                        {/* <!-- Menu --> */}
-                        <form className="dropdown-menu">
-                        <div className="card">
-                            <div className="card-body">
-
-                            {/* <!-- Form group--> */}
-                            <div className="form-group-overflow">
-                                <div className="form-check form-check-text mb-3">
-                                <input className="form-check-input" id="sortOne" name="sort" type="radio" value="Default"/>
-                                <label className="form-check-label" for="sortOne">Default</label>
-                                </div>
-                                <div className="form-check form-check-text mb-3">
-                                <input className="form-check-input" id="sortTwo" name="sort" type="radio" value="Newest"/>
-                                <label className="form-check-label" for="sortTwo">Newest</label>
-                                </div>
-                                <div className="form-check form-check-text mb-3">
-                                <input className="form-check-input" id="sortThree" name="sort" type="radio" value="Most Popular"/>
-                                <label className="form-check-label" for="sortThree">Most Popular</label>
-                                </div>
-                                <div className="form-check form-check-text mb-3">
-                                <input className="form-check-input" id="sortFour" name="sort" type="radio" value="Default Price"/>
-                                <label className="form-check-label" for="sortFour">Default Price</label>
-                                </div>
-                                <div className="form-check form-check-text">
-                                <input className="form-check-input" id="sortFive" name="sort" type="radio" value="Highest Price"/>
-                                <label className="form-check-label" for="sortFive">Highest Price</label>
-                                </div>
-                            </div>
-
-                            </div>
-                        </div>
-                        </form>
-
-                    </div>
-                    <div className="btn-group dropdown">
-
-                        {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
-                        Category
-                        </button>
-
-                        {/* <!-- Menu --> */}
-                        <form className="dropdown-menu">
-                        <div className="card">
-                            <div className="card-body">
-
-                            {/* <!-- Form group--> */}
-                            <div className="form-group-overflow">
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryOne" name="category" type="checkbox" value="All Products"/>
-                                <label className="form-check-label" for="categoryOne">All Products</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryTwo" name="category" type="checkbox" value="Blouses and Shirts"/>
-                                <label className="form-check-label" for="categoryTwo">Blouses and Shirts</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryThree" name="category" type="checkbox" value="Coats and Jackets"/>
-                                <label className="form-check-label" for="categoryThree">Coats and Jackets</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryFour" name="category" type="checkbox" value="Dresses"/>
-                                <label className="form-check-label" for="categoryFour">Dresses</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryFive" name="category" type="checkbox" value="Hoodies and Sweats"/>
-                                <label className="form-check-label" for="categoryFive">Hoodies and Sweats</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categorySix" name="category" type="checkbox" value="Denim"/>
-                                <label className="form-check-label" for="categorySix">Denim</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categorySeven" name="category" type="checkbox" value="Hoodies and Sweats"/>
-                                <label className="form-check-label" for="categorySeven">Hoodies and Sweats</label>
-                                </div>
-                                <div className="form-check mb-3">
-                                <input className="form-check-input" id="categoryEight" name="category" type="checkbox" value="Jeans"/>
-                                <label className="form-check-label" for="categoryEight">Jeans</label>
-                                </div>
-                                <div className="form-check">
-                                <input className="form-check-input" id="categoryNine" name="category" type="checkbox" value="Jumpers and Cardigans"/>
-                                <label className="form-check-label" for="categoryNine">Jumpers and Cardigans</label>
-                                </div>
-                                <div className="form-check">
-                                <input className="form-check-input" id="categoryTen" name="category" type="checkbox" value="Leggings"/>
-                                <label className="form-check-label" for="categoryTen">Leggings</label>
-                                </div>
-                            </div>
-
-                            </div>
-                            <div className="card-footer d-flex flex-nowrap border-top">
-
-                            {/* <!-- Buttons--> */}
-                            <button className="btn btn-outline-dark btn-sm" type="reset">
-                                Clear
-                            </button>
-                            <button className="btn btn-dark btn-sm ms-2" type="submit">
-                                Show Results
-                            </button>
-
-                            </div>
-                        </div>
-                        </form>
-
-                    </div>
-                    <div className="btn-group dropdown">
-
-                        {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
+                        <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Season
                         </button>
 
@@ -192,15 +241,15 @@ const Products = () => {
                             <div className="form-group-overflow">
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="seasonOne" name="category" type="checkbox" value="Summer"/>
-                                <label className="form-check-label" for="seasonOne">Summer</label>
+                                <label className="form-check-label" htmlFor="seasonOne">Summer</label>
                                 </div>
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="seasonTwo" name="category" type="checkbox" value="Winter"/>
-                                <label className="form-check-label" for="seasonTwo">Winter</label>
+                                <label className="form-check-label" htmlFor="seasonTwo">Winter</label>
                                 </div>
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="seasonThree" name="category" type="checkbox" value="Spring & Fall"/>
-                                <label className="form-check-label" for="seasonThree">Spring & Fall</label>
+                                <label className="form-check-label" htmlFor="seasonThree">Spring & Fall</label>
                                 </div>
                             </div>
 
@@ -220,10 +269,11 @@ const Products = () => {
                         </form>
 
                     </div>
+
                     <div className="btn-group dropdown">
 
                         {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
+                        <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Size
                         </button>
 
@@ -236,67 +286,67 @@ const Products = () => {
                             <div className="form-group-overflow">
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeOne" type="checkbox"/>
-                                <label className="form-check-label" for="sizeOne">
+                                <label className="form-check-label" htmlFor="sizeOne">
                                     3XS
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeTwo" type="checkbox" disabled/>
-                                <label className="form-check-label" for="sizeTwo">
+                                <label className="form-check-label" htmlFor="sizeTwo">
                                     2XS
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeThree" type="checkbox"/>
-                                <label className="form-check-label" for="sizeThree">
+                                <label className="form-check-label" htmlFor="sizeThree">
                                     XS
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeFour" type="checkbox"/>
-                                <label className="form-check-label" for="sizeFour">
+                                <label className="form-check-label" htmlFor="sizeFour">
                                     S
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeFive" type="checkbox"/>
-                                <label className="form-check-label" for="sizeFive">
+                                <label className="form-check-label" htmlFor="sizeFive">
                                     M
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeSix" type="checkbox"/>
-                                <label className="form-check-label" for="sizeSix">
+                                <label className="form-check-label" htmlFor="sizeSix">
                                     L
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeSeven" type="checkbox"/>
-                                <label className="form-check-label" for="sizeSeven">
+                                <label className="form-check-label" htmlFor="sizeSeven">
                                     XL
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeEight" type="checkbox" disabled/>
-                                <label className="form-check-label" for="sizeEight">
+                                <label className="form-check-label" htmlFor="sizeEight">
                                     2XL
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeNine" type="checkbox"/>
-                                <label className="form-check-label" for="sizeNine">
+                                <label className="form-check-label" htmlFor="sizeNine">
                                     3XL
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeTen" type="checkbox"/>
-                                <label className="form-check-label" for="sizeTen">
+                                <label className="form-check-label" htmlFor="sizeTen">
                                     4XL
                                 </label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeEleven" type="checkbox"/>
-                                <label className="form-check-label" for="sizeEleven">
+                                <label className="form-check-label" htmlFor="sizeEleven">
                                     One Size
                                 </label>
                                 </div>
@@ -321,7 +371,7 @@ const Products = () => {
                     <div className="btn-group dropdown">
 
                         {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
+                        <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Color
                         </button>
 
@@ -334,49 +384,49 @@ const Products = () => {
                             <div className="form-group-overflow">
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorOne" type="checkbox" style={{backgroundColor: '#1f1f1f'}}/>
-                                <label className="form-check-label text-body" for="colorOne">
+                                <label className="form-check-label text-body" htmlFor="colorOne">
                                     Black
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorTwo" type="checkbox" style={{backgroundColor: '#f9f9f9'}}/>
-                                <label className="form-check-label text-body" for="colorTwo">
+                                <label className="form-check-label text-body" htmlFor="colorTwo">
                                     White
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorThree" type="checkbox" style={{backgroundColor: '#3b86ff'}}/>
-                                <label className="form-check-label text-body" for="colorThree">
+                                <label className="form-check-label text-body" htmlFor="colorThree">
                                     Blue
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorFour" type="checkbox" style={{backgroundColor: '#ff6f61'}}/>
-                                <label className="form-check-label text-body" for="colorFour">
+                                <label className="form-check-label text-body" htmlFor="colorFour">
                                     Red
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorFive" type="checkbox" style={{backgroundColor: '#795548'}} disabled/>
-                                <label className="form-check-label text-body" for="colorFive">
+                                <label className="form-check-label text-body" htmlFor="colorFive">
                                     Brown
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorSix" type="checkbox" style={{backgroundColor: '#bababa'}}/>
-                                <label className="form-check-label text-body" for="colorSix">
+                                <label className="form-check-label text-body" htmlFor="colorSix">
                                     Gray
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorSeven" type="checkbox" style={{backgroundColor: '#17a2b8'}}/>
-                                <label className="form-check-label text-body" for="colorSeven">
+                                <label className="form-check-label text-body" htmlFor="colorSeven">
                                     Cyan
                                 </label>
                                 </div>
                                 <div className="form-check form-check-color">
                                 <input className="form-check-input" id="colorEight" type="checkbox" style={{backgroundColor: '#e83e8c'}}/>
-                                <label className="form-check-label text-body" for="colorEight">
+                                <label className="form-check-label text-body" htmlFor="colorEight">
                                     Pink
                                 </label>
                                 </div>
@@ -401,7 +451,7 @@ const Products = () => {
                     <div className="btn-group dropdown">
 
                         {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
+                        <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Brand
                         </button>
 
@@ -431,55 +481,55 @@ const Products = () => {
                                 <div className="list">
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandOne" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandOne">
+                                    <label className="form-check-label name" htmlFor="brandOne">
                                         Dsquared2
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandTwo" type="checkbox" disabled/>
-                                    <label className="form-check-label name" for="brandTwo">
+                                    <label className="form-check-label name" htmlFor="brandTwo">
                                         Alexander McQueen
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandThree" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandThree">
+                                    <label className="form-check-label name" htmlFor="brandThree">
                                         Balenciaga
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandFour" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandFour">
+                                    <label className="form-check-label name" htmlFor="brandFour">
                                         Adidas
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandFive" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandFive">
+                                    <label className="form-check-label name" htmlFor="brandFive">
                                         Balmain
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandSix" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandSix">
+                                    <label className="form-check-label name" htmlFor="brandSix">
                                         Burberry
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandSeven" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandSeven">
+                                    <label className="form-check-label name" htmlFor="brandSeven">
                                         Chloé
                                     </label>
                                     </div>
                                     <div className="form-check mb-3">
                                     <input className="form-check-input" id="brandEight" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandEight">
+                                    <label className="form-check-label name" htmlFor="brandEight">
                                         Kenzo
                                     </label>
                                     </div>
                                     <div className="form-check">
                                     <input className="form-check-input" id="brandNine" type="checkbox"/>
-                                    <label className="form-check-label name" for="brandNine">
+                                    <label className="form-check-label name" htmlFor="brandNine">
                                         Givenchy
                                     </label>
                                     </div>
@@ -507,7 +557,7 @@ const Products = () => {
                     <div className="btn-group dropdown">
 
                         {/* <!-- Toggle --> */}
-                        <button className="btn btn-sm w-100 btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
+                        <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Price
                         </button>
 
@@ -520,25 +570,25 @@ const Products = () => {
                             <div className="form-group-overflow">
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="priceOne" type="checkbox"/>
-                                <label className="form-check-label" for="priceOne">
+                                <label className="form-check-label" htmlFor="priceOne">
                                     $10.00 - $49.00
                                 </label>
                                 </div>
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="priceTwo" type="checkbox"/>
-                                <label className="form-check-label" for="priceTwo">
+                                <label className="form-check-label" htmlFor="priceTwo">
                                     $50.00 - $99.00
                                 </label>
                                 </div>
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="priceThree" type="checkbox"/>
-                                <label className="form-check-label" for="priceThree">
+                                <label className="form-check-label" htmlFor="priceThree">
                                     $100.00 - $199.00
                                 </label>
                                 </div>
                                 <div className="form-check">
                                 <input className="form-check-input" id="priceFour" type="checkbox"/>
-                                <label className="form-check-label" for="priceFour">
+                                <label className="form-check-label" htmlFor="priceFour">
                                     $200.00 and Up
                                 </label>
                                 </div>
@@ -630,23 +680,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productOneSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productOneSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productOneSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productOneSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productOneSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productOneSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productOneSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productOneSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productOneSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productOneSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -718,23 +768,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productTwoSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productTwoSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productTwoSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productTwoSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productTwoSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productTwoSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productTwoSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productTwoSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productTwoSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productTwoSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -804,23 +854,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productThreeSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productThreeSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productThreeSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productThreeSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productThreeSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -882,23 +932,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFourSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productFourSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFourSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productFourSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFourSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productFourSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFourSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productFourSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFourSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productFourSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -960,23 +1010,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFiveSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFiveSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFiveSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFiveSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productFiveSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -1056,23 +1106,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSixSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSixSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productSixSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSixSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSixSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productSixSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSixSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSixSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productSixSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSixSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSixSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productSixSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSixSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSixSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productSixSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -1134,23 +1184,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSevenSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSevenSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productSevenSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSevenSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSevenSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productSevenSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSevenSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSevenSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productSevenSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSevenSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSevenSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productSevenSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productSevenSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productSevenSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productSevenSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
@@ -1227,23 +1277,23 @@ const Products = () => {
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productEightSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productEightSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productEightSizeOne">6</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productEightSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productEightSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productEightSizeTwo">6.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productEightSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productEightSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productEightSizeThree">7</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productEightSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productEightSizeFour">7.5</label>
+                                <label className="form-check-label" htmlFor="productEightSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productEightSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" for="productEightSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productEightSizeFive">8.5</label>
                                 </div>
                             </div>
                             </form>
