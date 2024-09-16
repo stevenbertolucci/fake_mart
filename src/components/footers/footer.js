@@ -4,7 +4,7 @@ const Footer = ({ classList = '' }) => {
   return (
     <footer
       className={`bg-dark bg-cover ${classList}`}
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/patterns/pattern-2.svg)` }}
+      style={{ backgroundImage: './assets/img/patterns/pattern-2.svg' }}
     >
       <div className="py-12 border-bottom border-gray-700">
         <div className="container">

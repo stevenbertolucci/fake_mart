@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const Scripts = () => {
   useEffect(() => {
@@ -11,8 +11,8 @@ const Scripts = () => {
     };
 
     // Load the vendor.bundle.js and theme.bundle.js files
-    loadScript(`${process.env.PUBLIC_URL}/assets/js/vendor.bundle.js`);
-    loadScript(`${process.env.PUBLIC_URL}/assets/js/theme.bundle.js`);
+    loadScript('/assets/js/vendor.bundle.js');
+    loadScript('/assets/js/theme.bundle.js');
 
     // Cleanup function to remove the scripts when the component is unmounted
     return () => {

@@ -27,6 +27,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "autoprefixer": "^10.4.4",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
