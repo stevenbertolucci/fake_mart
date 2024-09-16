@@ -11,7 +11,7 @@ import Navbar from '../../components/navbars/navbar';
 const Home = () => {
     return (
         <div>
-            <Head title="Shopper" />
+            <Head title="Bertolucci Enterprise" />
     
 
             {/* <!-- MODALS --> */}
@@ -31,7 +31,7 @@ const Home = () => {
             <div className="row gx-0 d-block d-lg-flex flickity flickity-lg-none" data-flickity='{"watchCSS": true}'>
 
                 {/* <!-- Item --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: '/assets/img/covers/cover-1.jpg'}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-1.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
 
                 {/* <!-- Card --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: './assets/img/covers/cover-2.jpg'}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-2.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
 
                 {/* <!-- Card --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: './assets/img/covers/cover-3.jpg'}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-3.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
@@ -231,16 +231,17 @@ const Home = () => {
                     </p>
 
                 </div>
-                </div>
-                <div className="row">
+            </div>
+
+            <div className="row">
                 <div className="col-12 col-md-5 col-lg-4 d-flex flex-column">
 
                     {/* <!-- Card --> */}
-                    <div className="card mb-7 text-white" style={{ minHeight: '400px', backgroundImage: './assets/img/products/product-1.jpg' }}>
+                    <div className="card mb-7 text-white" style={{ minHeight: '400px', backgroundImage: `url('./assets/img/products/product-1.jpg')` }}>
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                    <div className="card-bg-img bg-cover" style={{ backgroundImage: './assets/img/products/product-1.jpg' }}></div>
+                    <div className="card-bg-img bg-cover" style={{ minHeight: '400px', backgroundImage: `url('./assets/img/products/product-1.jpg')` }} />
                     </div>
 
                     {/* <!-- Body --> */}
@@ -256,41 +257,42 @@ const Home = () => {
 
                     </div>
 
-                    </div>
-
                 </div>
-                <div className="col-12 col-md-7 col-lg-8 d-flex flex-column">
+
+            </div>
+
+            <div className="col-12 col-md-7 col-lg-8 d-flex flex-column">
 
                     {/* <!-- Card --> */}
                     <div className="card mb-7 text-body" style={{minHeight: '400px'}}>
 
-                    {/* <!-- Background --> */}
-                    <div className="card-bg">
-                        <div className="card-bg-img bg-cover" style={{backgroundImage: './assets/img/products/product-2.jpg'}}></div>
-                    </div>
-
-                    {/* <!-- Body --> */}
-                    <div className="card-body my-auto px-md-10 text-center text-md-start">
-
-                        {/* <!-- Circle --> */}
-                        <div className="card-circle card-circle-lg card-circle-end">
-                        <strong>save</strong>
-                        <span className="fs-4 fw-bold">30%</span>
+                        {/* <!-- Background --> */}
+                        <div className="card-bg">
+                            <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-2.jpg')`}}></div>
                         </div>
 
-                        {/* <!-- Heading --> */}
-                        <h4 className="mb-0">Printed men’s Shirts</h4>
+                        {/* <!-- Body --> */}
+                        <div className="card-body my-auto px-md-10 text-center text-md-start">
 
-                        {/* <!-- Link --> */}
-                        <a className="btn btn-link stretched-link px-0 text-reset" href="shop.html">
-                        Shop Now <i className="fe fe-arrow-right ms-2"></i>
-                        </a>
+                            {/* <!-- Circle --> */}
+                            <div className="card-circle card-circle-lg card-circle-end">
+                            <strong>save</strong>
+                            <span className="fs-4 fw-bold">30%</span>
+                            </div>
+
+                            {/* <!-- Heading --> */}
+                            <h4 className="mb-0">Printed men’s Shirts</h4>
+
+                            {/* <!-- Link --> */}
+                            <a className="btn btn-link stretched-link px-0 text-reset" href="shop.html">
+                            Shop Now <i className="fe fe-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
 
                     </div>
 
-                    </div>
-
-                </div>
+            </div>
                 <div className="col-12 col-md-7 col-lg-8 d-flex flex-column">
 
                     {/* <!-- Card --> */}
@@ -298,7 +300,7 @@ const Home = () => {
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                        <div className="card-bg-img bg-cover" style={{backgroundImage: './assets/img/products/product-3.jpg'}}></div>
+                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-3.jpg')`}}></div>
                     </div>
 
                     {/* <!-- Body --> */}
@@ -324,7 +326,7 @@ const Home = () => {
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                        <div className="card-bg-img bg-cover" style={{backgroundImage: './assets/img/products/product-4.jpg'}}></div>
+                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-4.jpg')`}}></div>
                     </div>
 
                     {/* <!-- Body --> */}
@@ -884,7 +886,7 @@ const Home = () => {
             </section>
 
             {/* <!-- COUNTDOWN --> */}
-            <section className="py-13 bg-cover" style={{backgroundImage: './assets/img/covers/cover-4.jpg'}}>
+            <section className="py-13 bg-cover" style={{backgroundImage: `url('./assets/img/covers/cover-4.jpg')`}}>
             <div className="container">
                 <div className="row justify-content-end">
                 <div className="col-12 col-md-8 col-lg-6">

@@ -36,7 +36,7 @@ const Footer = ({ classList = '' }) => {
           <div className="row">
             <div className="col-12 col-md-3">
               {/* Heading */}
-              <h4 className="mb-6 text-white">Shopper.</h4>
+              <h4 className="mb-6 text-white">Bertolucci Enterprise.</h4>
 
               {/* Social */}
               <ul className="list-unstyled list-inline mb-7 mb-md-0">
@@ -146,7 +146,7 @@ const Footer = ({ classList = '' }) => {
                   <a className="text-gray-300" href="#!">1-202-555-0106</a>
                 </li>
                 <li>
-                  <a className="text-gray-300" href="#!">help@shopper.com</a>
+                  <a className="text-gray-300" href="#!">help@bertoluccienterprise.com</a>
                 </li>
               </ul>
             </div>
@@ -160,7 +160,7 @@ const Footer = ({ classList = '' }) => {
             <div className="col">
               {/* Copyright */}
               <p className="mb-3 mb-md-0 fs-xxs text-muted">
-                © 2019 All rights reserved. Designed by Unvab.
+                © Steven Bertolucci 2024 All rights reserved.
               </p>
             </div>
             <div className="col-auto">

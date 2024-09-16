@@ -12,13 +12,13 @@ const Head = ({ title }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       {/* Favicon */}
-      <link rel="shortcut icon" href={`${process.env.PUBLIC_URL}/assets/favicon/favicon.ico`} type="image/x-icon" />
+      <link rel="shortcut icon" href={'/assets/favicon/favicon.ico'} type="image/x-icon" />
 
       {/* Libs CSS */}
-      <link rel="stylesheet" href={`${process.env.PUBLIC_URL}/assets/css/libs.bundle.css`} />
+      <link rel="stylesheet" href={'/assets/css/libs.bundle.css'} />
 
       {/* Theme CSS */}
-      <link rel="stylesheet" href={`${process.env.PUBLIC_URL}/assets/css/theme.bundle.css`} />
+      <link rel="stylesheet" href={'/assets/css/theme.bundle.css'} />
     </>
   );
 };
