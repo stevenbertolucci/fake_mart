@@ -626,11 +626,11 @@ const Products = () => {
                     {/* <!-- Image --> */}
                     <div className="card-img" data-flickity='{"draggable": false}' id="productOneImg">
                         <a className="d-block w-100" href="product.html">
-                        <img className="card-img-top" src="assets/img/products/product-5.jpg" alt="..." />
+                        <img className="card-img-top" src="assets/img/products/mojo.png" alt="..." />
                         </a>
-                        <a className="d-block w-100" href="product.html">
+                        {/* <a className="d-block w-100" href="product.html">
                         <img className="card-img-top" src="assets/img/products/product-142.jpg" alt="..." />
-                        </a>
+                        </a> */}
                     </div>
 
                     {/* <!-- Collapse --> */}
@@ -643,12 +643,12 @@ const Products = () => {
 
                             {/* <!-- Title --> */}
                             <a className="d-block fw-bold text-body" href="product.html">
-                                Leather mid-heel Sandals
+                                Austin Power's Mojo
                             </a>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
-                                Shoes
+                                Pharmacy
                             </a>
 
                             </div>
@@ -656,7 +656,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $129.00
+                                $1,299.99
                             </div>
 
                             </div>
@@ -667,34 +667,30 @@ const Products = () => {
                         <div className="card-collapse collapse">
                         <div className="card-footer px-0 bg-white">
                             <form>
-                            <div className="mb-1">
+                            {/* <div className="mb-1">
                                 <div className="form-check form-check-inline form-check-color">
                                 <input type="radio" id="productOneColorOne" name="productOneColor" className="form-check-input" data-toggle="flickity" data-target="#productOneImg" data-slide="0" style={{backgroundColor: 'beige'}} checked />
                                 </div>
                                 <div className="form-check form-check-inline form-check-color ms-n2">
                                 <input type="radio" id="productOneColorTwo" name="productOneColor" className="form-check-input" data-toggle="flickity" data-target="#productOneImg" data-slide="1" style={{backgroundColor: 'black'}} />
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productOneSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productOneSizeOne">20mg</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productOneSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productOneSizeTwo">50mg</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productOneSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productOneSizeThree">120mg</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productOneSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productOneSizeFour">7.5</label>
-                                </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productOneSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productOneSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productOneSizeFour">1g</label>
                                 </div>
                             </div>
                             </form>
@@ -714,11 +710,11 @@ const Products = () => {
                     {/* <!-- Image --> */}
                     <div className="card-img" data-flickity='{"draggable": false}' id="productTwoImg">
                         <a className="d-block w-100" href="product.html">
-                        <img className="card-img-top" src="assets/img/products/product-6.jpg" alt="..." />
+                        <img className="card-img-top" src="assets/img/products/phased_plasma.png" alt="..." />
                         </a>
-                        <a className="d-block w-100" href="product.html">
+                        {/* <a className="d-block w-100" href="product.html">
                         <img className="card-img-top" src="assets/img/products/product-143.jpg" alt="..." />
-                        </a>
+                        </a> */}
                     </div>
 
                     {/* <!-- Collapse --> */}
@@ -731,12 +727,12 @@ const Products = () => {
 
                             {/* <!-- Title --> */}
                             <a className="d-block fw-bold text-body" href="product.html">
-                                Cotton floral print Dress
+                                Phased Plasma in the 40 Watt Range
                             </a>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
-                                Dresses
+                                Sci-Fi
                             </a>
 
                             </div>
@@ -744,7 +740,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $40.00
+                                $8,799.99
                             </div>
 
                             </div>
@@ -755,34 +751,17 @@ const Products = () => {
                         <div className="card-collapse collapse">
                         <div className="card-footer px-0 bg-white">
                             <form>
-                            <div className="mb-1">
+                            {/* <div className="mb-1">
                                 <div className="form-check form-check-inline form-check-color">
                                 <input type="radio" id="productTwoColorOne" name="productTwoColor" className="form-check-input" data-toggle="flickity" data-target="#productTwoImg" data-slide="0" style={{backgroundColor: 'red'}} checked />
                                 </div>
                                 <div className="form-check form-check-inline form-check-color ms-n2">
                                 <input type="radio" id="productTwoColorTwo" name="productTwoColor" className="form-check-input" data-toggle="flickity" data-target="#productTwoImg" data-slide="1" style={{backgroundColor: 'white'}} />
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productTwoSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productTwoSizeOne">6</label>
-                                </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productTwoSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productTwoSizeTwo">6.5</label>
-                                </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productTwoSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productTwoSizeThree">7</label>
-                                </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productTwoSizeFour" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productTwoSizeFour">7.5</label>
-                                </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
-                                <input type="radio" id="productTwoSizeFive" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productTwoSizeFive">8.5</label>
+                                <label className="form-check-label" htmlFor="productTwoSizeOne">Hey, just what ya see, pal!</label>
                                 </div>
                             </div>
                             </form>
@@ -805,7 +784,7 @@ const Products = () => {
                     </div>
 
                     {/* <!-- Image --> */}
-                    <img className="card-img-top" src="assets/img/products/product-7.jpg" alt="..." />
+                    <img className="card-img-top" src="assets/img/products/potion.jpg" alt="..." />
 
                     {/* <!-- Collapse --> */}
                     <div className="card-collapse-parent">
@@ -817,12 +796,12 @@ const Products = () => {
 
                             {/* <!-- Title --> */}
                             <a className="d-block fw-bold text-body" href="product.html">
-                                Leather Sneakers
+                                Weight Loss Potion
                             </a>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
-                                Shoes
+                                Pharmacy
                             </a>
 
                             </div>
@@ -830,10 +809,10 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
-                                $115.00
+                                $99.99
                             </div>
                             <div className="fs-sm fw-bold text-primary">
-                                $85.00
+                                $79.99
                             </div>
 
                             </div>
@@ -844,32 +823,36 @@ const Products = () => {
                         <div className="card-collapse collapse">
                         <div className="card-footer px-0 bg-white">
                             <form>
-                            <div className="mb-1">
+                            {/* <div className="mb-1">
                                 <div className="form-check form-check-inline form-check-color">
                                 <input type="radio" id="productThreeColorOne" name="productThreeColor" className="form-check-input" style={{backgroundColor: '#f9f9f9'}} checked />
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productThreeSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeOne">Sherman Klump's weight loss potion is now available! Takes effect immediately after consumption. USE WITH CAUTION!</label>
+                                </div>
+                                <div className="form-check form-check-inline form-check-text fs-xs">
+                                <input type="radio" id="productThreeSizeOne" name="sizeRadio" className="form-check-input" />
+                                <label className="form-check-label" htmlFor="productThreeSizeOne">20mg</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeTwo" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productThreeSizeTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeTwo">50mg</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeThree" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productThreeSizeThree">7</label>
+                                <label className="form-check-label" htmlFor="productThreeSizeThree">150mg</label>
                                 </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
+                                {/* <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeFour" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productThreeSizeFour">7.5</label>
                                 </div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productThreeSizeFive" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productThreeSizeFive">8.5</label>
-                                </div>
+                                </div> */}
                             </div>
                             </form>
                         </div>
@@ -1313,7 +1296,7 @@ const Products = () => {
 
                         {/* <!-- Caption --> */}
                         <p className="fs-sm text-muted">
-                        Showing 16 of 24 products
+                        Showing 8 of 24 products
                         </p>
 
                         {/* <!-- Progress --> */}
