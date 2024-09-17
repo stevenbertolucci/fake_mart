@@ -894,7 +894,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $7417.76
+                                $7,417.76
                             </div>
 
                             </div>
@@ -972,7 +972,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                N/A
+                                $19.99
                             </div>
 
                             </div>
