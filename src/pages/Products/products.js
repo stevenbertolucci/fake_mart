@@ -869,7 +869,7 @@ const Products = () => {
                     <div className="card mb-7" data-toggle="card-collapse">
 
                     {/* <!-- Image --> */}
-                    <img className="card-img-top" src="assets/img/products/product-8.jpg" alt="..." />
+                    <img className="card-img-top" src="assets/img/products/declaration_of_independence.jpg" alt="..." />
 
                     {/* <!-- Collapse --> */}
                     <div className="card-collapse-parent">
@@ -881,12 +881,12 @@ const Products = () => {
 
                             {/* <!-- Title --> */}
                             <a className="d-block fw-bold text-body" href="product.html">
-                                Cropped cotton Top
+                                Declaration of Independence
                             </a>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
-                                Top
+                                Documents
                             </a>
 
                             </div>
@@ -894,7 +894,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $29.00
+                                $7417.76
                             </div>
 
                             </div>
@@ -905,12 +905,12 @@ const Products = () => {
                         <div className="card-collapse collapse">
                         <div className="card-footer px-0 bg-white">
                             <form>
-                            <div className="mb-1">
+                            {/* <div className="mb-1">
                                 <div className="form-check form-check-inline form-check-color">
                                 <input type="radio" id="productFourColorOne" name="productFourColor" className="form-check-input" style={{backgroundColor: '#f9f9f9'}} checked />
                                 </div>
-                            </div>
-                            <div>
+                            </div> */}
+                            {/* <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFourSizeOne" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productFourSizeOne">6</label>
@@ -931,7 +931,7 @@ const Products = () => {
                                 <input type="radio" id="productFourSizeFive" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productFourSizeFive">8.5</label>
                                 </div>
-                            </div>
+                            </div> */}
                             </form>
                         </div>
                         </div>
@@ -947,7 +947,7 @@ const Products = () => {
                     <div className="card mb-7" data-toggle="card-collapse">
 
                     {/* <!-- Image --> */}
-                    <img className="card-img-top" src="assets/img/products/product-9.jpg" alt="..." />
+                    <img className="card-img-top" src="assets/img/products/mithril.jpg" alt="..." />
 
                     {/* <!-- Collapse --> */}
                     <div className="card-collapse-parent">
@@ -959,12 +959,12 @@ const Products = () => {
 
                             {/* <!-- Title --> */}
                             <a className="d-block fw-bold text-body" href="product.html">
-                                Floral print midi Dress
+                                Mithril
                             </a>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
-                                Dresses
+                                Clothing
                             </a>
 
                             </div>
@@ -972,7 +972,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $50.00
+                                N/A
                             </div>
 
                             </div>
@@ -983,17 +983,17 @@ const Products = () => {
                         <div className="card-collapse collapse">
                         <div className="card-footer px-0 bg-white">
                             <form>
-                            <div className="mb-1">
+                            {/* <div className="mb-1">
                                 <div className="form-check form-check-inline form-check-color">
                                 <input type="radio" id="productFiveColorOne" name="productFiveColor" className="form-check-input" style={{backgroundColor: 'yellow'}} checked/>
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeOne" name="sizeRadio" className="form-check-input" />
-                                <label className="form-check-label" htmlFor="productFiveSizeOne">6</label>
+                                <label className="form-check-label" htmlFor="productFiveSizeOne">Here's a pretty thing...light as a feather, and hard as dragon's scales.</label>
                                 </div>
-                                <div className="form-check form-check-inline form-check-text fs-xs">
+                                {/* <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeTwo" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productFiveSizeTwo">6.5</label>
                                 </div>
@@ -1008,7 +1008,7 @@ const Products = () => {
                                 <div className="form-check form-check-inline form-check-text fs-xs">
                                 <input type="radio" id="productFiveSizeFive" name="sizeRadio" className="form-check-input" />
                                 <label className="form-check-label" htmlFor="productFiveSizeFive">8.5</label>
-                                </div>
+                                </div> */}
                             </div>
                             </form>
                         </div>
