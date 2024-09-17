@@ -1218,11 +1218,11 @@ const Home = () => {
                 <div className="col-12 text-center">
 
                     {/* <!-- Heading --> */}
-                    <h2 className="mb-3">@shopper</h2>
+                    <h2 className="mb-3">@bertolucci-enterprise</h2>
 
                     {/* <!-- Subheading --> */}
                     <p className="mb-10 fs-lg text-gray-500">
-                    Appear, dry there darkness they're seas, dry waters.
+                    "Don't believe everything you see on the internet." -Abraham Lincoln
                     </p>
 
                 </div>

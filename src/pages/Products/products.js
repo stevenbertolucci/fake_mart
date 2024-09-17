@@ -6,7 +6,6 @@ import Navbar from "../../components/navbars/navbar";
 import NavbarTopbar from "../../components/navbars/navbar-topbar";
 import Scripts from "../../components/scripts";
 import { Link } from "react-router-dom";
-import { Dropdown, ButtonGroup, Form, Card, Button } from 'react-bootstrap';
 
 const Products = () => {
 
@@ -60,10 +59,9 @@ const Products = () => {
 
                 </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                 <div className="col-12">
 
-                    {/* <!-- Filters --> */}
                     <div className="btn-group-justified btn-group-expand-lg mb-10" role="group">
                         <Dropdown as={ButtonGroup}>
                             <Dropdown.Toggle className="btn-sm w-100 btn-light btn-outline-border">
@@ -227,17 +225,17 @@ const Products = () => {
                         </Dropdown>
                     <div className="btn-group dropdown">
 
-                        {/* <!-- Toggle --> */}
+                        
                         <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Season
                         </button>
 
-                        {/* <!-- Menu --> */}
+                        
                         <form className="dropdown-menu">
                         <div className="card">
                             <div className="card-body">
 
-                            {/* <!-- Form group--> */}
+                            
                             <div className="form-group-overflow">
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="seasonOne" name="category" type="checkbox" value="Summer"/>
@@ -256,7 +254,7 @@ const Products = () => {
                             </div>
                             <div className="card-footer d-flex flex-nowrap border-top">
 
-                            {/* <!-- Buttons--> */}
+                            
                             <button className="btn btn-outline-dark btn-sm" type="reset">
                                 Clear
                             </button>
@@ -272,17 +270,17 @@ const Products = () => {
 
                     <div className="btn-group dropdown">
 
-                        {/* <!-- Toggle --> */}
+                        
                         <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Size
                         </button>
 
-                        {/* <!-- Menu --> */}
+                        
                         <form className="dropdown-menu">
                         <div className="card">
                             <div className="card-body">
 
-                            {/* <!-- Form group--> */}
+                            
                             <div className="form-group-overflow">
                                 <div className="form-check form-check-inline form-check-size mb-2">
                                 <input className="form-check-input" id="sizeOne" type="checkbox"/>
@@ -355,7 +353,7 @@ const Products = () => {
                             </div>
                             <div className="card-footer d-flex flex-nowrap border-top">
 
-                            {/* <!-- Buttons--> */}
+                            
                             <button className="btn btn-outline-dark btn-sm" type="reset">
                                 Clear
                             </button>
@@ -370,17 +368,17 @@ const Products = () => {
                     </div>
                     <div className="btn-group dropdown">
 
-                        {/* <!-- Toggle --> */}
+                        
                         <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Color
                         </button>
 
-                        {/* <!-- Menu --> */}
+                        
                         <form className="dropdown-menu">
                         <div className="card">
                             <div className="card-body">
 
-                            {/* <!-- Form group--> */}
+                            
                             <div className="form-group-overflow">
                                 <div className="form-check form-check-color mb-3">
                                 <input className="form-check-input" id="colorOne" type="checkbox" style={{backgroundColor: '#1f1f1f'}}/>
@@ -435,7 +433,7 @@ const Products = () => {
                             </div>
                             <div className="card-footer d-flex flex-nowrap border-top">
 
-                            {/* <!-- Buttons--> */}
+                            
                             <button className="btn btn-outline-dark btn-sm" type="reset">
                                 Clear
                             </button>
@@ -450,24 +448,24 @@ const Products = () => {
                     </div>
                     <div className="btn-group dropdown">
 
-                        {/* <!-- Toggle --> */}
+                        
                         <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Brand
                         </button>
 
-                        {/* <!-- Menu --> */}
+                        
                         <form className="dropdown-menu">
                         <div className="card">
                             <div className="card-body">
 
-                            {/* <!-- Search --> */}
+                            
                             <div data-list='{"valueNames": ["name"]}'>
 
-                                {/* <!-- Input group --> */}
+                                
                                 <div className="input-group input-group-merge mb-6">
                                 <input className="form-control form-control-xs search" type="search" placeholder="Search Brand"/>
 
-                                {/* <!-- Button --> */}
+                                
                                 <div className="input-group-append">
                                     <button className="btn btn-outline-border btn-xs">
                                     <i className="fe fe-search"></i>
@@ -476,7 +474,7 @@ const Products = () => {
 
                                 </div>
 
-                                {/* <!-- Form group--> */}
+                                
                                 <div className="form-group-overflow" id="brandGroup">
                                 <div className="list">
                                     <div className="form-check mb-3">
@@ -541,7 +539,7 @@ const Products = () => {
                             </div>
                             <div className="card-footer d-flex flex-nowrap border-top">
 
-                            {/* <!-- Buttons--> */}
+                            
                             <button className="btn btn-outline-dark btn-sm" type="reset">
                                 Clear
                             </button>
@@ -556,17 +554,17 @@ const Products = () => {
                     </div>
                     <div className="btn-group dropdown">
 
-                        {/* <!-- Toggle --> */}
+                        
                         <button className="btn btn-sm w-100 btn-light btn-outline-border dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" data-bs-auto-close="outside">
                         Price
                         </button>
 
-                        {/* <!-- Menu --> */}
+                        
                         <form className="dropdown-menu">
                         <div className="card">
                             <div className="card-body">
 
-                            {/* <!-- Form group--> */}
+                            
                             <div className="form-group-overflow">
                                 <div className="form-check mb-3">
                                 <input className="form-check-input" id="priceOne" type="checkbox"/>
@@ -597,7 +595,7 @@ const Products = () => {
                             </div>
                             <div className="card-footer d-flex flex-nowrap border-top">
 
-                            {/* <!-- Buttons--> */}
+                        
                             <button className="btn btn-outline-dark btn-sm" type="reset">
                                 Clear
                             </button>
@@ -613,7 +611,7 @@ const Products = () => {
                     </div>
 
                 </div>
-                </div>
+                </div> */}
                 <div className="row">
                 <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
