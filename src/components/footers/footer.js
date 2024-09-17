@@ -36,7 +36,7 @@ const Footer = ({ classList = '' }) => {
           <div className="row">
             <div className="col-12 col-md-3">
               {/* Heading */}
-              <h4 className="mb-6 text-white">Bertolucci Enterprise.</h4>
+              <h4 className="mb-6 text-white">Bertolucci Enterprise</h4>
 
               {/* Social */}
               <ul className="list-unstyled list-inline mb-7 mb-md-0">
