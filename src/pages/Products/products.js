@@ -1298,7 +1298,7 @@ const Products = () => {
 
                         {/* <!-- Progress --> */}
                         <div className="progress mx-auto mb-7" style={{maxWidth: '250px'}}>
-                        <div className="progress-bar bg-dark" role="progressbar" style={{width: '66%'}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div className="progress-bar bg-dark" role="progressbar" style={{width: '33%'}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
 
                         {/* <!-- Button --> */}
