@@ -3,7 +3,6 @@ import Head from "../../components/head";
 import Promo from "../../components/misc/promo";
 import Modals from "../../components/modal";
 import Navbar from "../../components/navbars/navbar";
-import NavbarTopbar from "../../components/navbars/navbar-topbar";
 import Scripts from "../../components/scripts";
 import { Link } from "react-router-dom";
 
@@ -19,7 +18,7 @@ const Products = () => {
             <Modals />
 
             {/* <!-- NAVBAR --> */}
-            <NavbarTopbar />
+            {/* <NavbarTopbar /> */}
 
             {/* <!-- NAVBAR --> */}
             <Navbar />
@@ -1233,7 +1232,7 @@ const Products = () => {
 
                             {/* <!-- Price --> */}
                             <div className="fs-sm fw-bold text-muted">
-                                $19,999.99
+                                $39,999.99
                             </div>
 
                             </div>

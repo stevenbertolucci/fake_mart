@@ -5,7 +5,6 @@ import Modals from '../../components/modal';
 import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
 import Promo from '../../components/misc/promo';
-import NavbarTopbar from '../../components/navbars/navbar-topbar';
 import Navbar from '../../components/navbars/navbar';
 
 const Home = () => {
@@ -18,7 +17,7 @@ const Home = () => {
             <Modals />
 
             {/* <!-- NAVBAR --> */}
-            <NavbarTopbar />
+            {/* <NavbarTopbar /> */}
 
             {/* <!-- NAVBAR --> */}
             <Navbar />
