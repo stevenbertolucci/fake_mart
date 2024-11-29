@@ -8,7 +8,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
 
         {/* Brand */}
         <Link className="navbar-brand" to={'/'}>
-          Bertolucci Enterprise
+          Fake Mart
         </Link>
 
         {/* Toggler */}
@@ -32,29 +32,11 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Catalog</Link>
-
-              {/* Menu */}
-              {/* Replace this with a CatalogDropdown component */}
-              {/* <CatalogDropdown /> */}
-            </li>
-            
-            <li className="nav-item">
-              {/* Toggle */}
               <Link className="nav-link" to='/products'>Products</Link>
 
               {/* Menu */}
               {/* Replace this with a ShopDropdown component */}
               {/* <ShopDropdown /> */}
-            </li>
-            
-            <li className="nav-item">
-              {/* Toggle */}
-              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Pages</Link>
-
-              {/* Menu */}
-              {/* Replace this with a PagesDropdown component */}
-              {/* <PagesDropdown /> */}
             </li>
             
             <li className="nav-item">
@@ -67,7 +49,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Docs</Link>
+              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Contact</Link>
             </li>
           </ul>
 

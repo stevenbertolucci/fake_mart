@@ -4,13 +4,12 @@ import Head from '../../components/head';
 import Modals from '../../components/modal';
 import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
-import Promo from '../../components/misc/promo';
 import Navbar from '../../components/navbars/navbar';
 
 const Home = () => {
     return (
         <div>
-            <Head title="Bertolucci Enterprise" />
+            <Head title="Fake Mart" />
     
 
             {/* <!-- MODALS --> */}
@@ -23,7 +22,7 @@ const Home = () => {
             <Navbar />
 
             {/* <!-- PROMO --> */}
-            <Promo />
+            {/* <Promo /> */}
 
             {/* <!-- CATEGORIES --> */}
             <section>
@@ -1217,7 +1216,7 @@ const Home = () => {
                 <div className="col-12 text-center">
 
                     {/* <!-- Heading --> */}
-                    <h2 className="mb-3">@bertolucci-enterprise</h2>
+                    <h2 className="mb-3">@fakemart</h2>
 
                     {/* <!-- Subheading --> */}
                     <p className="mb-10 fs-lg text-gray-500">

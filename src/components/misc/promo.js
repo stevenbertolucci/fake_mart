@@ -11,7 +11,7 @@ const Promo = ({ classList = '' }) => {
             {/* Text */}
             <div className="text-center text-white">
               <span className="heading-xxs letter-spacing-xl">
-                ⚡️ Happy Holiday Deals on Everything ⚡️
+                ⚡️ Anything you dream of, we get it! ⚡️
               </span>
             </div>
 

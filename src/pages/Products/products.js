@@ -11,7 +11,7 @@ const Products = () => {
     return (
         <div>
             <head>
-                <Head title="Bertolucci Enterprise" />
+                <Head title="Fake Mart" />
             </head>
 
             {/* <!-- MODALS --> */}
@@ -624,9 +624,9 @@ const Products = () => {
 
                     {/* <!-- Image --> */}
                     <div className="card-img" data-flickity='{"draggable": false}' id="productOneImg">
-                        <a className="d-block w-100" href="product.html">
+                        <Link className="d-block w-100" to="/products/austin-powers-mojo">
                             <img className="card-img-top" src="assets/img/products/mojo.png" alt="..." />
-                        </a>
+                        </Link>
                         {/* <a className="d-block w-100" href="product.html">
                         <img className="card-img-top" src="assets/img/products/product-142.jpg" alt="..." />
                         </a> */}
@@ -641,9 +641,9 @@ const Products = () => {
                             <div className="col">
 
                             {/* <!-- Title --> */}
-                            <a className="d-block fw-bold text-body" href="product.html">
+                            <Link className="d-block fw-bold text-body" to="/products/austin-powers-mojo">
                                 Austin Power's Mojo
-                            </a>
+                            </Link>
 
                             {/* <!-- Category --> */}
                             <a className="fs-xs text-muted" href="shop.html">
@@ -701,6 +701,7 @@ const Products = () => {
                     </div>
 
                 </div>
+
                 <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                     {/* <!-- Card --> */}
