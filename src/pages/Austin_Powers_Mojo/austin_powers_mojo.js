@@ -1,18 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Head from '../../components/head';
 import Modals from '../../components/modal';
 import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
+import BigPicture from 'bigpicture'
 
 const Austin_Powers_Mojo = () => {
-    const [currentImage, setCurrentImage] = useState("/assets/img/products/mojo.png"); // Default image
-
-    const handleImageClick = (newImage) => {
-        setCurrentImage(newImage); // Update the big image
-    };
-
     return (
         <div>
 
@@ -60,7 +55,7 @@ const Austin_Powers_Mojo = () => {
                                 <div className="col-12 col-md-6">
 
                                     {/* <!-- Card --> */}
-                                    <div className="card mb-4">
+                                    <div className="card">
 
                                     {/* <!-- Badge --> */}
                                     <div className="badge bg-primary card-badge text-uppercase">
@@ -68,33 +63,141 @@ const Austin_Powers_Mojo = () => {
                                     </div>
 
                                     {/* <!-- Slider --> */}
-                                    <div className="col-12 col-md-6">
-                                    
-                                        {/* Main Image */}
-                                        <div className="card mb-4">
-                                            <img src={currentImage} alt="Product" className="card-img-top"/>
-                                        </div>
+                                    <div className="mb-4" data-flickity='{"draggable": false, "fade": true}' id="productSlider">
 
-                                        {/* Thumbnails */}
-                                        <div className="d-flex justify-content-start align-items-center mx-n2 mb-10 mb-md-0">
-                                            {/* Thumbnail 1 */}
-                                            <div className="col-12 px-2" style={{ maxWidth: "113px" }} onClick={() => handleImageClick("/assets/img/products/mojo.png")} >
-                                                <div className="ratio ratio-1x1 bg-cover" style={{ backgroundImage: "url(/assets/img/products/mojo.png)", cursor: "pointer" }}></div>
-                                            </div>
+                                        {/* <!-- Item --> */}
+                                        <a href="#" 
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            BigPicture({
+                                              el: e.target, 
+                                              imgSrc: "/assets/img/products/mojo.png",
+                                            });
+                                          }}>
+                                            <img 
+                                                src="/assets/img/products/mojo.png" 
+                                                alt="..." 
+                                                className="card-img-top"
+                                                style={{
+                                                    width: '100%', 
+                                                    height: 'auto', 
+                                                    maxHeight: '400px', 
+                                                    objectFit: 'cover'
+                                                  }}
+                                            />
+                                        </a>
 
-                                            {/* Thumbnail 2 */}
-                                            <div className="col-12 px-2" style={{ maxWidth: "113px" }} onClick={() => handleImageClick("/assets/img/products/anakin.png")}>
-                                                <div className="ratio ratio-1x1 bg-cover" style={{ backgroundImage: "url(/assets/img/products/anakin.png)", cursor: "pointer" }}> </div>
-                                            </div>
+                                        {/* <!-- Item --> */}
+                                        <a href="#" 
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            BigPicture({
+                                              el: e.target, 
+                                              imgSrc: "/assets/img/products/anakin.png",
+                                            });
+                                          }}>
+                                            <img 
+                                                src="/assets/img/products/anakin.png" 
+                                                alt="..." 
+                                                className="card-img-top"
+                                                style={{
+                                                    width: '100%', 
+                                                    height: 'auto', 
+                                                    maxHeight: '400px', 
+                                                    objectFit: 'cover'
+                                                  }}
+                                            />
+                                        </a>
 
-                                            {/* Thumbnail 3 */}
-                                            <div className="col-12 px-2" style={{ maxWidth: "113px" }} onClick={() => handleImageClick("/assets/img/products/mithril.jpg")}>
-                                                <div className="ratio ratio-1x1 bg-cover" style={{ backgroundImage: "url(/assets/img/products/mithril.jpg)", cursor: "pointer" }}></div>
-                                            </div>
-                                        </div>
+                                        {/* <!-- Item --> */}
+                                        <a href="#" 
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            BigPicture({
+                                              el: e.target, 
+                                              imgSrc: "/assets/img/products/mithril.jpg",
+                                            });
+                                          }}>
+                                            <img 
+                                                src="/assets/img/products/mithril.jpg" 
+                                                alt="..." 
+                                                className="card-img-top"
+                                                style={{
+                                                    width: '100%', 
+                                                    height: 'auto', 
+                                                    maxHeight: '400px', 
+                                                    objectFit: 'cover'
+                                                  }}
+                                            />
+                                        </a>
                                     </div>
                                 </div>
+
+                                {/* <!-- Slider --> */}
+                                <div className="flickity-nav mx-n2 mb-10 mb-md-0" data-flickity='{"asNavFor": "#productSlider", "contain": true, "wrapAround": false}'>
+
+                                    {/* <!-- Item --> */}
+                                    <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
+
+                                        {/* <!-- Image --> */}
+                                        <div 
+                                            className="ratio ratio-1x1 bg-cover" 
+                                            style={{
+                                                width: '100%',
+                                                height: '113px',
+                                                objectFit: 'cover',
+                                                backgroundImage: `url(/assets/img/products/mojo.png)`,
+                                                backgroundPosition: 'center',
+                                                backgroundSize: 'cover'
+                                            }}>
+
+                                        </div>
+
+                                </div>
+
+                                {/* <!-- Item --> */}
+                                <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
+
+                                    {/* <!-- Image --> */}
+                                    <div 
+                                        className="ratio ratio-1x1 bg-cover" 
+                                        style={{
+                                            width: '100%',
+                                            height: '113px',
+                                            objectFit: 'cover',
+                                            backgroundImage: `url(/assets/img/products/anakin.png)`,
+                                            backgroundPosition: 'center',
+                                            backgroundSize: 'cover'
+                                        }}
+                                    >
+
+                                    </div>
+
+                                </div>
+
+                                {/* <!-- Item --> */}
+                                <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
+
+                                    {/* <!-- Image --> */}
+                                    <div 
+                                        className="ratio ratio-1x1 bg-cover" 
+                                        style={{
+                                            width: '100%',
+                                            height: '113px',
+                                            objectFit: 'cover',
+                                            backgroundImage: `url(/assets/img/products/mithril.jpg)`,
+                                            backgroundPosition: 'center',
+                                            backgroundSize: 'cover'
+                                            }}
+                                    >
+
+                                    </div>
+
+                                </div>
+
                             </div>
+
+                        </div>
                     <div className="col-12 col-md-6 ps-lg-10">
 
                         {/* <!-- Header --> */}
