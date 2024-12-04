@@ -58,8 +58,8 @@ const Austin_Powers_Mojo = () => {
                                     <div className="card">
 
                                     {/* <!-- Badge --> */}
-                                    <div className="badge bg-primary card-badge text-uppercase">
-                                        Sale
+                                    <div className="badge bg-white text-body card-badge card-badge text-uppercase">
+                                        New
                                     </div>
 
                                     {/* <!-- Slider --> */}
@@ -93,11 +93,11 @@ const Austin_Powers_Mojo = () => {
                                             e.preventDefault();
                                             BigPicture({
                                               el: e.target, 
-                                              imgSrc: "/assets/img/products/anakin.png",
+                                              imgSrc: "/assets/img/products/1969.png",
                                             });
                                           }}>
                                             <img 
-                                                src="/assets/img/products/anakin.png" 
+                                                src="/assets/img/products/1969.png" 
                                                 alt="..." 
                                                 className="card-img-top"
                                                 style={{
@@ -115,11 +115,11 @@ const Austin_Powers_Mojo = () => {
                                             e.preventDefault();
                                             BigPicture({
                                               el: e.target, 
-                                              imgSrc: "/assets/img/products/mithril.jpg",
+                                              imgSrc: "/assets/img/products/dr.evil.jpg",
                                             });
                                           }}>
                                             <img 
-                                                src="/assets/img/products/mithril.jpg" 
+                                                src="/assets/img/products/dr.evil.jpg" 
                                                 alt="..." 
                                                 className="card-img-top"
                                                 style={{
@@ -165,7 +165,7 @@ const Austin_Powers_Mojo = () => {
                                             width: '100%',
                                             height: '113px',
                                             objectFit: 'cover',
-                                            backgroundImage: `url(/assets/img/products/anakin.png)`,
+                                            backgroundImage: `url(/assets/img/products/1969.png)`,
                                             backgroundPosition: 'center',
                                             backgroundSize: 'cover'
                                         }}
@@ -185,7 +185,7 @@ const Austin_Powers_Mojo = () => {
                                             width: '100%',
                                             height: '113px',
                                             objectFit: 'cover',
-                                            backgroundImage: `url(/assets/img/products/mithril.jpg)`,
+                                            backgroundImage: `url(/assets/img/products/dr.evil.jpg)`,
                                             backgroundPosition: 'center',
                                             backgroundSize: 'cover'
                                             }}

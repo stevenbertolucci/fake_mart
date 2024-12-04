@@ -8,30 +8,6 @@ const Footer = ({ classList = '' }) => {
     >
       <div className="py-12 border-bottom border-gray-700">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-10 col-lg-8 col-xl-6">
-
-              {/* Heading */}
-              <h5 className="mb-7 text-center text-white">Want style Ideas and Treats?</h5>
-
-              {/* Form */}
-              <form className="mb-11">
-                <div className="row gx-5 align-items-start">
-                  <div className="col">
-                    <input
-                      type="email"
-                      className="form-control form-control-gray-700 form-control-lg"
-                      placeholder="Enter Email *"
-                    />
-                  </div>
-                  <div className="col-auto">
-                    <button type="submit" className="btn btn-gray-500 btn-lg">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-
-            </div>
-          </div>
 
           <div className="row">
             <div className="col-12 col-md-3">
