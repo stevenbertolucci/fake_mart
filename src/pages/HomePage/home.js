@@ -29,13 +29,13 @@ const Home = () => {
             <div className="row gx-0 d-block d-lg-flex flickity flickity-lg-none" data-flickity='{"watchCSS": true}'>
 
                 {/* <!-- Item --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-1.jpg')`}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/pharmacy_home.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
                     {/* <!-- Heading --> */}
                     <h1 className="mb-0 fw-bolder">
-                        Women
+                        Pharmacy
                     </h1>
 
                     </div>
@@ -43,7 +43,7 @@ const Home = () => {
 
                     {/* <!-- Button --> */}
                     <a className="btn btn-white stretched-link" href="shop.html">
-                        Shop Women <i className="fe fe-arrow-right ms-2"></i>
+                        Shop Pharmacy <i className="fe fe-arrow-right ms-2"></i>
                     </a>
 
                     </div>
@@ -51,13 +51,13 @@ const Home = () => {
                 </div>
 
                 {/* <!-- Card --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-2.jpg')`}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/sci-fi-home.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
                     {/* <!-- Heading --> */}
                     <h1 className="mb-0 fw-bolder">
-                        Men
+                        Sci-Fi
                     </h1>
 
                     </div>
@@ -65,7 +65,7 @@ const Home = () => {
 
                     {/* <!-- Button --> */}
                     <Link className="btn btn-white stretched-link" to="shop.html">
-                        Shop Men <i className="fe fe-arrow-right ms-2"></i>
+                        Shop Sci-Fi <i className="fe fe-arrow-right ms-2"></i>
                     </Link>
 
                     </div>
@@ -73,13 +73,13 @@ const Home = () => {
                 </div>
 
                 {/* <!-- Card --> */}
-                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/cover-3.jpg')`}}>
+                <div className="col-12 col-md-6 col-lg-4 d-flex flex-column bg-cover" style={{backgroundImage: `url('/assets/img/covers/tools_home.jpg')`}}>
                 <div className="card bg-dark-5 bg-hover text-white text-center" style={{minHeight: '470px'}}>
                     <div className="card-body mt-auto mb-n11 py-8">
 
                     {/* <!-- Heading --> */}
                     <h1 className="mb-0 fw-bolder">
-                        Kids
+                        Tools
                     </h1>
 
                     </div>
@@ -87,7 +87,7 @@ const Home = () => {
 
                     {/* <!-- Button --> */}
                     <Link className="btn btn-white stretched-link" to="shop.html">
-                        Shop Kids <i className="fe fe-arrow-right ms-2"></i>
+                        Shop Tools <i className="fe fe-arrow-right ms-2"></i>
                     </Link>
 
                     </div>
