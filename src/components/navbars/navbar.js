@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${classList}`}>
       <div className="container">
@@ -12,12 +18,16 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
         </Link>
 
         {/* Toggler */}
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleNavbar}
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Collapse */}
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarCollapse">
 
           {/* Nav */}
           <ul className="navbar-nav mx-auto">
@@ -41,7 +51,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</Link>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</a>
 
               {/* Menu */}
               {/* Replace this with a BlogDropdown component */}
@@ -49,7 +59,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Contact</Link>
+              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Contact</a>
             </li>
           </ul>
 
