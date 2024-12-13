@@ -1,7 +1,6 @@
 import Footer from "../../components/footers/footer";
 import Head from "../../components/head";
 import Promo from "../../components/misc/promo";
-import Modals from "../../components/modal";
 import Navbar from "../../components/navbars/navbar";
 import Scripts from "../../components/scripts";
 import { Link } from "react-router-dom";

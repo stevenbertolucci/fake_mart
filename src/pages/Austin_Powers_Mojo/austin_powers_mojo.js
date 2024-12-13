@@ -6,7 +6,7 @@ import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import BigPicture from 'bigpicture'
 
-const Austin_Powers_Mojo = () => {
+const AustinPowersMojo = () => {
     return (
         <div>
 
@@ -1455,4 +1455,4 @@ const Austin_Powers_Mojo = () => {
     );
 };
 
-export default Austin_Powers_Mojo;
+export default AustinPowersMojo;

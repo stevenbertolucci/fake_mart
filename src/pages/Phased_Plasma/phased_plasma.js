@@ -6,7 +6,7 @@ import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import BigPicture from 'bigpicture'
 
-const Phased_Plasma = () => {
+const PhasedPlasma = () => {
     return (
         <div>
 
@@ -1447,4 +1447,4 @@ const Phased_Plasma = () => {
     );
 };
 
-export default Phased_Plasma;
+export default PhasedPlasma;
