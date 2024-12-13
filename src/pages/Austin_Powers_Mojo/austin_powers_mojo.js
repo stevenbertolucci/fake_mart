@@ -5,13 +5,11 @@ import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import BigPicture from 'bigpicture'
+import 'flickity/css/flickity.css';
 
 const AustinPowersMojo = () => {
     return (
         <div>
-
-            {/* <!-- JAVASCRIPT --> */}
-            <Scripts />
 
             <Head title="Fake Mart" />
 
