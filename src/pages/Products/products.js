@@ -12,13 +12,6 @@ const Products = () => {
         <div>
             
             <Head title="Fake Mart" />
-            
-
-            {/* <!-- MODALS --> */}
-            <Modals />
-
-            {/* <!-- NAVBAR --> */}
-            {/* <NavbarTopbar /> */}
 
             {/* <!-- NAVBAR --> */}
             <Navbar />
