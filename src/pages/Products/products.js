@@ -65,7 +65,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7">
 
                                 {/* <!-- Badge --> */}
                                 <div className="badge bg-white text-body card-badge card-badge-start text-uppercase">
@@ -109,10 +109,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +119,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7">
 
                                 {/* <!-- Image --> */}
                                 <div className="card-img" data-flickity='{"draggable": false}' id="productTwoImg">
@@ -163,10 +159,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +169,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Badge --> */}
                                 <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
@@ -225,10 +217,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +227,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Image --> */}
                                 <img className="card-img-top" src="assets/img/products/declaration_of_independence.jpg" alt="..." />
@@ -273,10 +261,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -287,7 +271,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Image --> */}
                                 <img className="card-img-top" src="assets/img/products/mithril.jpg" alt="..." />
@@ -320,10 +304,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +314,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Badge --> */}
                                 <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
@@ -377,10 +357,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -391,7 +367,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Image --> */}
                                 <img className="card-img-top" src="assets/img/products/kryptonite.jpg" alt="..." />
@@ -425,10 +401,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +411,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7" >
 
                                 {/* <!-- Badge --> */}
                                 <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
@@ -482,10 +454,6 @@ const Products = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -497,7 +465,7 @@ const Products = () => {
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
 
                             {/* <!-- Card --> */}
-                            <div className="card mb-7" data-toggle="card-collapse">
+                            <div className="card mb-7">
 
                                 {/* <!-- Badge --> */}
                                 <div className="badge bg-warning text-body card-badge card-badge-start text-uppercase">
