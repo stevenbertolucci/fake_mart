@@ -20,7 +20,6 @@ import './flickity';
 import './form';
 import './highlight';
 import './img-comp';
-import './jarallax';
 import './list';
 import './map';
 import './navbar';

@@ -1008,7 +1008,7 @@ const Home = () => {
                                 From creepeth said moved given divide make multiply of him shall itself also above second doesn't unto created saying land herb sea midst night wherein.
                             </p>
                             <footer className="fs-xs text-muted">
-                                Logan Edwards, <time datetime="2019-06-01">01 Jun 2019</time>
+                                Logan Edwards, <time dateTime="2019-06-01">01 Jun 2019</time>
                             </footer>
                             </blockquote>
 
@@ -1070,7 +1070,7 @@ const Home = () => {
                                 God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars, us you whales may, land, saw fill unto.
                             </p>
                             <footer className="fs-xs text-muted">
-                                Jane Jefferson, <time datetime="2019-05-29">29 May 2019</time>
+                                Jane Jefferson, <time dateTime="2019-05-29">29 May 2019</time>
                             </footer>
                             </blockquote>
 
@@ -1132,7 +1132,7 @@ const Home = () => {
                                 Fill his waters wherein signs likeness waters. Second light gathered appear sixth fourth, seasons behold creeping female.
                             </p>
                             <footer className="fs-xs text-muted">
-                                Darrell Baker, <time datetime="2019-05-18">18 May 2019</time>
+                                Darrell Baker, <time dateTime="2019-05-18">18 May 2019</time>
                             </footer>
                             </blockquote>
 
@@ -1194,7 +1194,7 @@ const Home = () => {
                                 God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars.
                             </p>
                             <footer className="fs-xs text-muted">
-                                Pavel Doe, <time datetime="2019-05-29">29 May 2019</time>
+                                Pavel Doe, <time dateTime="2019-05-29">29 May 2019</time>
                             </footer>
                             </blockquote>
 

@@ -259,59 +259,59 @@ const Austin_Powers_Mojo = () => {
                             <div className="mb-2">
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioOne" value="6" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioOne">6</label>
+                                <label className="form-check-label" htmlFor="sizeRadioOne">6</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioTwo" value="6.5" data-toggle="form-caption" data-target="#sizeCaption" disabled />
-                                <label className="form-check-label" for="sizeRadioTwo">6.5</label>
+                                <label className="form-check-label" htmlFor="sizeRadioTwo">6.5</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioThree" value="7" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioThree">7</label>
+                                <label className="form-check-label" htmlFor="sizeRadioThree">7</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
-                                <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioFour" value="7.5" data-toggle="form-caption" data-target="#sizeCaption" checked />
-                                <label className="form-check-label" for="sizeRadioFour">7.5</label>
+                                <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioFour" value="7.5" data-toggle="form-caption" data-target="#sizeCaption" defaultChecked />
+                                <label className="form-check-label" htmlFor="sizeRadioFour">7.5</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioFive" value="8" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioFive">8</label>
+                                <label className="form-check-label" htmlFor="sizeRadioFive">8</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioSix" value="8.5" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioSix">8.5</label>
+                                <label className="form-check-label" htmlFor="sizeRadioSix">8.5</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioSeven" value="9" data-toggle="form-caption" data-target="#sizeCaption" disabled />
-                                <label className="form-check-label" for="sizeRadioSeven">9</label>
+                                <label className="form-check-label" htmlFor="sizeRadioSeven">9</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioEight" value="9.5" data-toggle="form-caption" data-target="#sizeCaption" disabled />
-                                <label className="form-check-label" for="sizeRadioEight">9.5</label>
+                                <label className="form-check-label" htmlFor="sizeRadioEight">9.5</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioNine" value="10" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioNine">10</label>
+                                <label className="form-check-label" htmlFor="sizeRadioNine">10</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioTen" value="10.5" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioTen">10.5</label>
+                                <label className="form-check-label" htmlFor="sizeRadioTen">10.5</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioEleven" value="11" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioEleven">11</label>
+                                <label className="form-check-label" htmlFor="sizeRadioEleven">11</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioTwelve" value="12" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioTwelve">12</label>
+                                <label className="form-check-label" htmlFor="sizeRadioTwelve">12</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioThirteen" value="13" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioThirteen">13</label>
+                                <label className="form-check-label" htmlFor="sizeRadioThirteen">13</label>
                             </div>
                             <div className="form-check form-check-inline form-check-size mb-2">
                                 <input type="radio" className="form-check-input" name="sizeRadio" id="sizeRadioFourteen" value="14" data-toggle="form-caption" data-target="#sizeCaption" />
-                                <label className="form-check-label" for="sizeRadioFourteen">14</label>
+                                <label className="form-check-label" htmlFor="sizeRadioFourteen">14</label>
                             </div>
                             </div>
 
@@ -326,7 +326,7 @@ const Austin_Powers_Mojo = () => {
 
                                 {/* <!-- Quantity --> */}
                                 <select className="form-select mb-2">
-                                <option value="1" selected>1</option>
+                                <option value="1" defaultValue>1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -944,7 +944,7 @@ const Austin_Powers_Mojo = () => {
 
                             {/* <!-- Name --> */}
                             <div className="form-group">
-                            <label className="visually-hidden" for="reviewName">Your Name:</label>
+                            <label className="visually-hidden" htmlFor="reviewName">Your Name:</label>
                             <input className="form-control form-control-sm" id="reviewName" type="text" placeholder="Your Name *" required />
                             </div>
 
@@ -953,7 +953,7 @@ const Austin_Powers_Mojo = () => {
 
                             {/* <!-- Email --> */}
                             <div className="form-group">
-                            <label className="visually-hidden" for="reviewEmail">Your Email:</label>
+                            <label className="visually-hidden" htmlFor="reviewEmail">Your Email:</label>
                             <input className="form-control form-control-sm" id="reviewEmail" type="email" placeholder="Your Email *" required />
                             </div>
 
@@ -962,7 +962,7 @@ const Austin_Powers_Mojo = () => {
 
                             {/* <!-- Name --> */}
                             <div className="form-group">
-                            <label className="visually-hidden" for="reviewTitle">Review Title:</label>
+                            <label className="visually-hidden" htmlFor="reviewTitle">Review Title:</label>
                             <input className="form-control form-control-sm" id="reviewTitle" type="text" placeholder="Review Title *" required />
                             </div>
 
@@ -971,7 +971,7 @@ const Austin_Powers_Mojo = () => {
 
                             {/* <!-- Name --> */}
                             <div className="form-group">
-                            <label className="visually-hidden" for="reviewText">Review:</label>
+                            <label className="visually-hidden" htmlFor="reviewText">Review:</label>
                             <textarea className="form-control form-control-sm" id="reviewText" rows="5" placeholder="Review *" required></textarea>
                             </div>
 
@@ -1036,7 +1036,7 @@ const Austin_Powers_Mojo = () => {
 
                                 {/* <!-- Time --> */}
                                 <span className="fs-xs text-muted">
-                                    Logan Edwards, <time datetime="2019-07-25">25 Jul 2019</time>
+                                    Logan Edwards, <time dateTime="2019-07-25">25 Jul 2019</time>
                                 </span>
 
                                 </div>
@@ -1141,7 +1141,7 @@ const Austin_Powers_Mojo = () => {
 
                                 {/* <!-- Time --> */}
                                 <span className="fs-xs text-muted">
-                                    Sophie Casey, <time datetime="2019-07-07">07 Jul 2019</time>
+                                    Sophie Casey, <time dateTime="2019-07-07">07 Jul 2019</time>
                                 </span>
 
                                 </div>
@@ -1244,7 +1244,7 @@ const Austin_Powers_Mojo = () => {
 
                                     {/* <!-- Time --> */}
                                     <span className="fs-xs text-muted">
-                                    William Stokes, <time datetime="2019-07-14">14 Jul 2019</time>
+                                    William Stokes, <time dateTime="2019-07-14">14 Jul 2019</time>
                                     </span>
 
                                 </div>

@@ -10,9 +10,9 @@ const Products = () => {
 
     return (
         <div>
-            <head>
-                <Head title="Fake Mart" />
-            </head>
+            
+            <Head title="Fake Mart" />
+            
 
             {/* <!-- MODALS --> */}
             <Modals />
