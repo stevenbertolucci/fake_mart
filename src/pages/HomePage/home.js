@@ -1209,7 +1209,7 @@ const Home = () => {
 
                     {/* <!-- Subheading --> */}
                     <p className="mb-10 fs-lg text-gray-500">
-                    "Don't believe everything you see on the internet." -Abraham Lincoln
+                    "Don't believe everything you see on the internet." - Abraham Lincoln
                     </p>
 
                 </div>

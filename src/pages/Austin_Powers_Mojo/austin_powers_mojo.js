@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Head from '../../components/head';
 import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
-import BigPicture from 'bigpicture'
 import 'flickity/css/flickity.css';
 
 const AustinPowersMojo = () => {
+    // List of images
+    const images = [
+        "/assets/img/products/mojo.png",
+        "/assets/img/products/1969.png",
+        "/assets/img/products/dr.evil.jpg",
+    ];
+
+    // State for the main image
+    const [mainImage, setMainImage] = useState(images[0]);
+
     return (
         <div>
 
@@ -51,147 +60,75 @@ const AustinPowersMojo = () => {
                                     {/* <!-- Card --> */}
                                     <div className="card">
 
-                                    {/* <!-- Badge --> */}
-                                    <div className="badge bg-white text-body card-badge card-badge text-uppercase">
-                                        New
-                                    </div>
-
-                                    {/* <!-- Slider --> */}
-                                    <div className="mb-4" data-flickity='{"draggable": false, "fade": true}' id="productSlider">
-
-                                        {/* <!-- Item --> */}
-                                        <a href="#" 
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            BigPicture({
-                                              el: e.target, 
-                                              imgSrc: "/assets/img/products/mojo.png",
-                                            });
-                                          }}>
-                                            <img 
-                                                src="/assets/img/products/mojo.png" 
-                                                alt="..." 
-                                                className="card-img-top"
-                                                style={{
-                                                    width: '100%', 
-                                                    height: 'auto', 
-                                                    maxHeight: '400px', 
-                                                    objectFit: 'cover'
-                                                  }}
-                                            />
-                                        </a>
-
-                                        {/* <!-- Item --> */}
-                                        <a href="#" 
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            BigPicture({
-                                              el: e.target, 
-                                              imgSrc: "/assets/img/products/1969.png",
-                                            });
-                                          }}>
-                                            <img 
-                                                src="/assets/img/products/1969.png" 
-                                                alt="..." 
-                                                className="card-img-top"
-                                                style={{
-                                                    width: '100%', 
-                                                    height: 'auto', 
-                                                    maxHeight: '400px', 
-                                                    objectFit: 'cover'
-                                                  }}
-                                            />
-                                        </a>
-
-                                        {/* <!-- Item --> */}
-                                        <a href="#" 
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            BigPicture({
-                                              el: e.target, 
-                                              imgSrc: "/assets/img/products/dr.evil.jpg",
-                                            });
-                                          }}>
-                                            <img 
-                                                src="/assets/img/products/dr.evil.jpg" 
-                                                alt="..." 
-                                                className="card-img-top"
-                                                style={{
-                                                    width: '100%', 
-                                                    height: 'auto', 
-                                                    maxHeight: '400px', 
-                                                    objectFit: 'cover'
-                                                  }}
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                {/* <!-- Slider --> */}
-                                <div className="flickity-nav mx-n2 mb-10 mb-md-0" data-flickity='{"asNavFor": "#productSlider", "contain": true, "wrapAround": false}'>
-
-                                    {/* <!-- Item --> */}
-                                    <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
-
-                                        {/* <!-- Image --> */}
-                                        <div 
-                                            className="ratio ratio-1x1 bg-cover" 
-                                            style={{
-                                                width: '100%',
-                                                height: '113px',
-                                                objectFit: 'cover',
-                                                backgroundImage: `url(/assets/img/products/mojo.png)`,
-                                                backgroundPosition: 'center',
-                                                backgroundSize: 'cover'
-                                            }}>
-
+                                        {/* <!-- Badge --> */}
+                                        <div className="badge bg-white text-body card-badge card-badge text-uppercase">
+                                            New
                                         </div>
 
-                                </div>
+                                        {/* <!-- Slider --> */}
+                                        <div className="mb-4" >
 
-                                {/* <!-- Item --> */}
-                                <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
+                                            {/* <!-- Item --> */}
+                                            <img
+                                                src={mainImage}
+                                                alt="Main Product"
+                                                style={{
+                                                    width: "100%",
+                                                    height: "auto",
+                                                    maxHeight: "500px",
+                                                    objectFit: "cover",
+                                                    borderRadius: "8px",
+                                                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                                                }}
+                                            />
+                                        </div>
+                                    
 
-                                    {/* <!-- Image --> */}
-                                    <div 
-                                        className="ratio ratio-1x1 bg-cover" 
-                                        style={{
-                                            width: '100%',
-                                            height: '113px',
-                                            objectFit: 'cover',
-                                            backgroundImage: `url(/assets/img/products/1969.png)`,
-                                            backgroundPosition: 'center',
-                                            backgroundSize: 'cover'
-                                        }}
-                                    >
+                                        {/* <!-- Slider --> */}
+                                        <div className="flickity-nav mx-n2 mb-10 mb-md-0" 
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                gap: "10px",
+                                                flexWrap: "wrap",
+                                                }}
+                                        >
 
+                                            {/* <!-- Image --> */}
+                                            {images.map((img, index) => (
+                                                <div
+                                                key={index}
+                                                style={{
+                                                    cursor: "pointer",
+                                                    border:
+                                                    mainImage === img
+                                                        ? "2px solid #007bff"
+                                                        : "2px solid transparent",
+                                                    borderRadius: "4px",
+                                                    overflow: "hidden",
+                                                    transition: "border 0.3s ease",
+                                                    width: "80px",
+                                                    height: "80px",
+                                                }}
+                                                onClick={() => setMainImage(img)}
+                                                >
+
+                                                <img
+                                                    src={img}
+                                                    alt={`Thumbnail ${index + 1}`}
+                                                    style={{
+                                                    width: "100%",
+                                                    height: "100%",
+                                                    objectFit: "cover",
+                                                    }}
+                                                    />
+                                                </div>
+                                            ))}
+
+                                        </div>
                                     </div>
-
                                 </div>
-
-                                {/* <!-- Item --> */}
-                                <div className="col-12 px-2" style={{maxWidth: "113px", margin: '0 auto'}}>
-
-                                    {/* <!-- Image --> */}
-                                    <div 
-                                        className="ratio ratio-1x1 bg-cover" 
-                                        style={{
-                                            width: '100%',
-                                            height: '113px',
-                                            objectFit: 'cover',
-                                            backgroundImage: `url(/assets/img/products/dr.evil.jpg)`,
-                                            backgroundPosition: 'center',
-                                            backgroundSize: 'cover'
-                                            }}
-                                    >
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                                
                     <div className="col-12 col-md-6 ps-lg-10">
 
                         {/* <!-- Header --> */}
