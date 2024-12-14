@@ -6,12 +6,12 @@ import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import ProductYouMightLike from '../../components/products_you_may_like';
 
-const DeclarationOfIndependence = () => {
+const Mithril = () => {
     // List of images
     const images = [
-        "/assets/img/products/declaration_of_independence.jpg",
-        "/assets/img/products/independence.jpg",
-        "/assets/img/products/declaration_independence.png",
+        "/assets/img/products/mithril.jpg",
+        "/assets/img/products/mithril_frodo.png",
+        "/assets/img/products/art_mithril.png",
     ];
 
     // State for the main image
@@ -40,7 +40,7 @@ const DeclarationOfIndependence = () => {
                         <Link className="text-gray-400" to="/products">Products</Link>
                     </li>
                     <li className="breadcrumb-item active">
-                        Declaration of Independence
+                        Mithril
                     </li>
                     </ol>
 
@@ -131,7 +131,7 @@ const DeclarationOfIndependence = () => {
                         <div className="col">
 
                             {/* <!-- Preheading --> */}
-                            <a className="text-muted" href="shop.html">Documents</a>
+                            <a className="text-muted" href="shop.html">Clothing</a>
 
                         </div>
                         <div className="col-auto">
@@ -163,11 +163,11 @@ const DeclarationOfIndependence = () => {
                         </div>
 
                         {/* <!-- Heading --> */}
-                        <h3 className="mb-2">Declaration of Independence</h3>
+                        <h3 className="mb-2">Mithril</h3>
 
                         {/* <!-- Price --> */}
                         <div className="mb-7">
-                        <span className="ms-1 fs-5 fw-bolder text-primary">Contact Seller</span>
+                        <span className="ms-1 fs-5 fw-bolder text-primary">$19.99</span>
                         <span className="fs-sm ms-1">(In Stock)</span>
                         </div>
 
@@ -546,6 +546,7 @@ const DeclarationOfIndependence = () => {
                         <strong className="fs-sm ms-2">Reviews (3)</strong>
 
                     </div>
+
                     <div className="col-12 col-md-auto">
 
                         {/* <!-- Button --> */}
@@ -1119,4 +1120,4 @@ const DeclarationOfIndependence = () => {
     );
 };
 
-export default DeclarationOfIndependence;
+export default Mithril;
