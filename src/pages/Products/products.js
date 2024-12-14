@@ -221,8 +221,14 @@ const Products = () => {
                             {/* <!-- Card --> */}
                             <div className="card mb-7" >
 
-                                {/* <!-- Image --> */}
-                                <img className="card-img-top" src="assets/img/products/declaration_of_independence.jpg" alt="..." />
+                                <div className="card-img" data-flickity='{"draggable": false}' id="productFourImg">
+
+                                    <Link className="d-block w-100" to="/products/declaration-of-independence">
+                                        {/* <!-- Image --> */}
+                                        <img className="card-img-top" src="assets/img/products/declaration_of_independence.jpg" alt="..." />
+                                    </Link>
+
+                                </div>
 
                                 {/* <!-- Collapse --> */}
                                 <div className="card-collapse-parent">
@@ -233,9 +239,9 @@ const Products = () => {
                                             <div className="col">
 
                                             {/* <!-- Title --> */}
-                                            <a className="d-block fw-bold text-body" href="product.html">
+                                            <Link className="d-block fw-bold text-body" to="/products/declaration-of-independence">
                                                 Declaration of Independence
-                                            </a>
+                                            </Link>
 
                                             {/* <!-- Category --> */}
                                             <a className="fs-xs text-muted" href="shop.html">
