@@ -60,6 +60,11 @@ const AnakinLightsaber = () => {
                                     {/* <!-- Card --> */}
                                     <div className="card">
 
+                                    {/* <!-- Badge --> */}
+                                    <div className="badge bg-dark text-white card-badge card-badge text-uppercase">
+                                        NEW
+                                    </div>
+
                                     {/* <!-- Slider --> */}
                                     <div className="mb-4">
 
