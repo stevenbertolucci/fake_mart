@@ -327,9 +327,9 @@ const Products = () => {
 
                                 {/* <!-- Image --> */}
                                 <div className="card-img" data-flickity='{"draggable": false}' id="productSixImg">
-                                    <a className="d-block w-100" href="product.html">
+                                    <Link className="d-block w-100" to="/products/harry-potter-wand">
                                         <img className="card-img-top" src="assets/img/products/harry_potter.jpg" alt="..." />
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 {/* <!-- Collapse --> */}
@@ -340,9 +340,9 @@ const Products = () => {
                                         <div className="row gx-0">
                                             <div className="col">
                                                 {/* <!-- Title --> */}
-                                                <a className="d-block fw-bold text-body" href="product.html">
+                                                <Link className="d-block fw-bold text-body" to="/products/harry-potter-wand">
                                                     Harry Potter's Wand
-                                                </a>
+                                                </Link>
 
                                                 {/* <!-- Category --> */}
                                                 <a className="fs-xs text-muted" href="shop.html">
@@ -373,8 +373,14 @@ const Products = () => {
                             {/* <!-- Card --> */}
                             <div className="card mb-7" >
 
+                            <div className="card-img" data-flickity='{"draggable": false}' id="productSevenImg">
+                                
+                                <Link className="d-block w-100" to="/products/kryptonite">
                                 {/* <!-- Image --> */}
                                 <img className="card-img-top" src="assets/img/products/kryptonite.jpg" alt="..." />
+                                </Link>
+
+                            </div>
 
                                 {/* <!-- Collapse --> */}
                                 <div className="card-collapse-parent">
@@ -385,14 +391,14 @@ const Products = () => {
                                             <div className="col">
 
                                             {/* <!-- Title --> */}
-                                            <a className="d-block fw-bold text-body" href="product.html">
+                                            <Link className="d-block fw-bold text-body" to="/products/kryptonite">
                                                 Kryptonite
-                                            </a>
+                                            </Link>
 
                                             {/* <!-- Category --> */}
-                                            <a className="fs-xs text-muted" href="shop.html">
+                                            <Link className="fs-xs text-muted" href="shop.html">
                                                 Supplies
-                                            </a>
+                                            </Link>
 
                                             </div>
                                             <div className="col-auto">
@@ -424,12 +430,11 @@ const Products = () => {
 
                                 {/* <!-- Image --> */}
                                 <div className="card-img" data-flickity='{"draggable": false}' id="productEightImg">
-                                    <a className="d-block w-100" href="product.html">
+
+                                    <Link className="d-block w-100" to="/products/anakin-lightsaber">
                                         <img className="card-img-top" src="assets/img/products/anakin.png" alt="..." />
-                                    </a>
-                                    {/* <a className="d-block w-100" href="product.html">
-                                    <img className="card-img-top" src="assets/img/products/product-145.jpg" alt="..." />
-                                    </a> */}
+                                    </Link>
+
                                 </div>
 
                                 {/* <!-- Collapse --> */}
@@ -440,9 +445,9 @@ const Products = () => {
                                         <div className="row gx-0">
                                             <div className="col">
                                                 {/* <!-- Title --> */}
-                                                <a className="d-block fw-bold text-body" href="product.html">
+                                                <Link className="d-block fw-bold text-body" to="/products/anakin-lightsaber">
                                                     Anakin's Lightsaber
-                                                </a>
+                                                </Link>
 
                                                 {/* <!-- Category --> */}
                                                 <a className="fs-xs text-muted" href="shop.html">
@@ -478,7 +483,7 @@ const Products = () => {
 
                                 {/* <!-- Image --> */}
                                 <div className="card-img" data-flickity='{"draggable": false}' id="productOneImg">
-                                    <Link className="d-block w-100" to="/products/austin-powers-mojo">
+                                    <Link className="d-block w-100" to="/products/the-kramer">
                                         <img className="card-img-top" src="assets/img/products/the_kramer.png" alt="..." />
                                     </Link>
                                     {/* <a className="d-block w-100" href="product.html">
@@ -495,7 +500,7 @@ const Products = () => {
                                             <div className="col">
 
                                                 {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/austin-powers-mojo">
+                                                <Link className="d-block fw-bold text-body" to="/products/the-kramer">
                                                     The Kramer
                                                 </Link>
 

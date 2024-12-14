@@ -6,12 +6,10 @@ import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import ProductYouMightLike from '../../components/products_you_may_like';
 
-const WeightLossPotion = () => {
+const TheKramer = () => {
     // List of images
     const images = [
-        "/assets/img/products/before_after.png",
-        "/assets/img/products/potion.jpg",
-        "/assets/img/products/buddy_love.png",
+        "/assets/img/products/the_kramer.png",
     ];
 
     // State for the main image
@@ -40,7 +38,7 @@ const WeightLossPotion = () => {
                         <Link className="text-gray-400" to="/products">Products</Link>
                     </li>
                     <li className="breadcrumb-item active">
-                        Buddy Love's Weight Loss Potion
+                        The Kramer
                     </li>
                     </ol>
 
@@ -60,10 +58,10 @@ const WeightLossPotion = () => {
                                     {/* <!-- Card --> */}
                                     <div className="card">
 
-                                    {/* <!-- Badge --> */}
-                                    <div className="badge bg-dark text-white card-badge card-badge text-uppercase">
-                                        Sale
-                                    </div>
+                                     {/* <!-- Badge --> */}
+                                <div className="badge bg-warning text-body card-badge card-badge-start text-uppercase">
+                                    TRENDING
+                                </div>
 
                                     {/* <!-- Slider --> */}
                                     <div className="mb-4">
@@ -75,59 +73,17 @@ const WeightLossPotion = () => {
                                             style={{
                                                 width: "100%",
                                                 height: "auto",
-                                                maxHeight: "500px",
-                                                objectFit: "contain",
+                                                maxHeight: "800px",
+                                                objectFit: "cover",
                                                 borderRadius: "8px",
                                                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                                             }}
                                         />
                                 </div>
-
-                                {/* <!-- Slider --> */}
-                                <div className="flickity-nav mx-n2 mb-10 mb-md-0"
-                                    style={{
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        gap: "10px",
-                                        flexWrap: "wrap",
-                                    }}
-                                >
-                                    {/* <!-- Image --> */}
-                                    {images.map((img, index) => (
-                                                <div
-                                                    key={index}
-                                                    style={{
-                                                        cursor: "pointer",
-                                                        border:
-                                                        mainImage === img
-                                                            ? "2px solid #007bff"
-                                                            : "2px solid transparent",
-                                                        borderRadius: "4px",
-                                                        overflow: "hidden",
-                                                        transition: "border 0.3s ease",
-                                                        width: "80px",
-                                                        height: "80px",
-                                                    }}
-                                                    onClick={() => setMainImage(img)}
-                                                >
-
-                                                    <img
-                                                        src={img}
-                                                        alt={`Thumbnail ${index + 1}`}
-                                                        style={{
-                                                        width: "100%",
-                                                        height: "100%",
-                                                        objectFit: "cover",
-                                                        }}
-                                                    />
-                                                </div>
-                                            ))}
-
-                                        </div>
                                 
-                                    </div>
+                            </div>
 
-                                </div>
+                        </div>
 
                     <div className="col-12 col-md-6 ps-lg-10">
 
@@ -136,7 +92,7 @@ const WeightLossPotion = () => {
                         <div className="col">
 
                             {/* <!-- Preheading --> */}
-                            <a className="text-muted" href="shop.html">Pharmacy</a>
+                            <a className="text-muted" href="shop.html">Art</a>
 
                         </div>
                         <div className="col-auto">
@@ -168,12 +124,11 @@ const WeightLossPotion = () => {
                         </div>
 
                         {/* <!-- Heading --> */}
-                        <h3 className="mb-2">Buddy Love's Weight Loss Potion</h3>
+                        <h3 className="mb-2">The Kramer</h3>
 
                         {/* <!-- Price --> */}
                         <div className="mb-7">
-                        <span className="fs-lg fw-bold text-gray-350 text-decoration-line-through">$99.99</span>
-                        <span className="ms-1 fs-5 fw-bolder text-primary">$79.99</span>
+                        <span className="ms-1 fs-5 fw-bolder text-primary">$14,999.99</span>
                         <span className="fs-sm ms-1">(In Stock)</span>
                         </div>
 
@@ -552,6 +507,7 @@ const WeightLossPotion = () => {
                         <strong className="fs-sm ms-2">Reviews (3)</strong>
 
                     </div>
+
                     <div className="col-12 col-md-auto">
 
                         {/* <!-- Button --> */}
@@ -1125,4 +1081,4 @@ const WeightLossPotion = () => {
     );
 };
 
-export default WeightLossPotion;
+export default TheKramer;

@@ -6,12 +6,12 @@ import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import ProductYouMightLike from '../../components/products_you_may_like';
 
-const WeightLossPotion = () => {
+const AnakinLightsaber = () => {
     // List of images
     const images = [
-        "/assets/img/products/before_after.png",
-        "/assets/img/products/potion.jpg",
-        "/assets/img/products/buddy_love.png",
+        "/assets/img/products/anakin.png",
+        "/assets/img/products/anakin_lightsaber.png",
+        "/assets/img/products/anakin_lightsaber_mustafar.png",
     ];
 
     // State for the main image
@@ -40,7 +40,7 @@ const WeightLossPotion = () => {
                         <Link className="text-gray-400" to="/products">Products</Link>
                     </li>
                     <li className="breadcrumb-item active">
-                        Buddy Love's Weight Loss Potion
+                        Anakin's Lightsaber
                     </li>
                     </ol>
 
@@ -60,11 +60,6 @@ const WeightLossPotion = () => {
                                     {/* <!-- Card --> */}
                                     <div className="card">
 
-                                    {/* <!-- Badge --> */}
-                                    <div className="badge bg-dark text-white card-badge card-badge text-uppercase">
-                                        Sale
-                                    </div>
-
                                     {/* <!-- Slider --> */}
                                     <div className="mb-4">
 
@@ -76,7 +71,7 @@ const WeightLossPotion = () => {
                                                 width: "100%",
                                                 height: "auto",
                                                 maxHeight: "500px",
-                                                objectFit: "contain",
+                                                objectFit: "cover",
                                                 borderRadius: "8px",
                                                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                                             }}
@@ -136,7 +131,7 @@ const WeightLossPotion = () => {
                         <div className="col">
 
                             {/* <!-- Preheading --> */}
-                            <a className="text-muted" href="shop.html">Pharmacy</a>
+                            <a className="text-muted" href="shop.html">Tools</a>
 
                         </div>
                         <div className="col-auto">
@@ -168,12 +163,11 @@ const WeightLossPotion = () => {
                         </div>
 
                         {/* <!-- Heading --> */}
-                        <h3 className="mb-2">Buddy Love's Weight Loss Potion</h3>
+                        <h3 className="mb-2">Anakin's Lightsaber</h3>
 
                         {/* <!-- Price --> */}
                         <div className="mb-7">
-                        <span className="fs-lg fw-bold text-gray-350 text-decoration-line-through">$99.99</span>
-                        <span className="ms-1 fs-5 fw-bolder text-primary">$79.99</span>
+                        <span className="ms-1 fs-5 fw-bolder text-primary">$39,999.99</span>
                         <span className="fs-sm ms-1">(In Stock)</span>
                         </div>
 
@@ -552,6 +546,7 @@ const WeightLossPotion = () => {
                         <strong className="fs-sm ms-2">Reviews (3)</strong>
 
                     </div>
+
                     <div className="col-12 col-md-auto">
 
                         {/* <!-- Button --> */}
@@ -1125,4 +1120,4 @@ const WeightLossPotion = () => {
     );
 };
 
-export default WeightLossPotion;
+export default AnakinLightsaber;
