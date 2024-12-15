@@ -4,6 +4,7 @@ import Promo from "../../components/misc/promo";
 import Navbar from "../../components/navbars/navbar";
 import Scripts from "../../components/scripts";
 import { Link } from "react-router-dom";
+import products from "../../data/productsData";
 
 const Products = () => {
 
@@ -26,14 +27,13 @@ const Products = () => {
 
                             {/* <!-- BREADCRUMB --> */}
                             <ol className="breadcrumb mb-0 fs-xs text-gray-400">
-                            <li className="breadcrumb-item">
-                                <Link className="text-reset" to="/">Home</Link>
-                            </li>
-                            <li className="breadcrumb-item active">
-                                Products
-                            </li>
+                                <li className="breadcrumb-item">
+                                    <Link className="text-reset" to="/">Home</Link>
+                                </li>
+                                <li className="breadcrumb-item active">
+                                    Products
+                                </li>
                             </ol>
-
                         </div>
                     </div>
                 </div>
@@ -50,29 +50,45 @@ const Products = () => {
 
                         </div>
                     </div>
-                    
+
+                    {/* Dynamic Product Cards */}
                     <div className="row">
 
-                        {/* Austin Powers Mojo */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
+                    {products.map((product) => (
+
+                        <div className="col-6 col-sm-6 col-md-4 col-lg-3" key={product.id}>
 
                             {/* <!-- Card --> */}
                             <div className="card mb-7">
 
                                 {/* <!-- Badge --> */}
-                                <div className="badge bg-white text-body card-badge card-badge-start text-uppercase">
-                                    New
+                                {product.status && (
+                                <div className={
+                                    product.status === "SALE" || product.status === "NEW"
+                                    ? "badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg"
+
+                                    : product.status === "TRENDING"
+                                    ? "badge bg-warning text-body card-badge card-badge-start text-uppercase"
+                                    : ""
+                                    }
+                                >
+                                    {product.status}
                                 </div>
+                                )}
 
                                 {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productOneImg">
-                                    <Link className="d-block w-100" to="/products/austin-powers-mojo">
-                                        <img className="card-img-top" src="assets/img/products/mojo.png" alt="..." />
+                                <div className="card-img" data-flickity='{"draggable": false}'>
+                                    <Link className="d-block w-100" to={`/products/${product.id}`}>
+                                        <img 
+                                            className="card-img-top" 
+                                            src={product.images[0]} 
+                                            alt={product.name} 
+                                        />
                                     </Link>
                                 </div>
 
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
+                                 {/* <!-- Collapse --> */}
+                                 <div className="card-collapse-parent">
 
                                     {/* <!-- Body --> */}
                                     <div className="card-body px-0 pb-0 bg-white">
@@ -80,487 +96,47 @@ const Products = () => {
                                             <div className="col">
 
                                                 {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/austin-powers-mojo">
-                                                    Austin Power's Mojo
+                                                <Link className="d-block fw-bold text-body" to={`/products/${product.id}`}>
+                                                    {product.name}
                                                 </Link>
 
                                                 {/* <!-- Category --> */}
                                                 <a className="fs-xs text-muted" href="shop.html">
-                                                    Pharmacy
+                                                    {product.category}
                                                 </a>
 
                                             </div>
 
                                             <div className="col-auto">
 
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $1,299.99
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Phased Plasma Gun */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7">
-
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productTwoImg">
-
-                                    <Link className="d-block w-100" to="/products/phased-plasma-40-watt-range">
-                                        <img className="card-img-top" src="assets/img/products/phased_plasma.png" alt="..." />
-                                    </Link>
-
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="phased-plasma-40-watt-range">
-                                                    Phased Plasma in the 40 Watt Range
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Sci-Fi
-                                                </a>
-
-                                            </div>
-                                            <div className="col-auto">
-
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $8,799.99
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Buddy Love Weight Loss Potion */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                                {/* <!-- Badge --> */}
-                                <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
-                                    Sale
-                                </div>
-
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productThreeImg">
-
-                                    <Link className="d-block w-100" to="/products/buddy-love-weight-loss-potion">
-                                        <img className="card-img-top" src="assets/img/products/before_after.png" alt="..." />
-                                    </Link>
-
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/buddy-love-weight-loss-potion">
-                                                    Buddy Love's Weight Loss Potion
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Pharmacy
-                                                </a>
-
-                                            </div>
-                                            <div className="col-auto">
-
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
-                                                    $99.99
-                                                </div>
-                                                <div className="fs-sm fw-bold text-primary">
-                                                    $79.99
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Declaration of Independence */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productFourImg">
-
-                                    <Link className="d-block w-100" to="/products/declaration-of-independence">
-                                        {/* <!-- Image --> */}
-                                        <img className="card-img-top" src="assets/img/products/declaration_of_independence.jpg" alt="..." />
-                                    </Link>
-
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                            {/* <!-- Title --> */}
-                                            <Link className="d-block fw-bold text-body" to="/products/declaration-of-independence">
-                                                Declaration of Independence
-                                            </Link>
-
-                                            {/* <!-- Category --> */}
-                                            <a className="fs-xs text-muted" href="shop.html">
-                                                Documents
-                                            </a>
-
-                                            </div>
-                                            <div className="col-auto">
-
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $7,417.76
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Mithril */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productFiveImg">
-
-                                    <Link className="d-block w-100" to="/products/mithril">
-
-                                        {/* <!-- Image --> */}
-                                        <img className="card-img-top" src="assets/img/products/mithril.jpg" alt="..." />
-                                    </Link>
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/mithril">
-                                                    Mithril
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Clothing
-                                                </a>
-
-                                            </div>
-                                            <div className="col-auto">
-
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $19.99
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Harry Potter's Wand */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                                {/* <!-- Badge --> */}
-                                <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
-                                    Sale
-                                </div>
-
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productSixImg">
-                                    <Link className="d-block w-100" to="/products/harry-potter-wand">
-                                        <img className="card-img-top" src="assets/img/products/harry_potter.jpg" alt="..." />
-                                    </Link>
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/harry-potter-wand">
-                                                    Harry Potter's Wand
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Tools
-                                                </a>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
-                                                    $299.99
-                                                </div>
-                                                <div className="fs-sm fw-bold text-primary">
-                                                    $149.00
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Kryptonite */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                            <div className="card-img" data-flickity='{"draggable": false}' id="productSevenImg">
-                                
-                                <Link className="d-block w-100" to="/products/kryptonite">
-                                {/* <!-- Image --> */}
-                                <img className="card-img-top" src="assets/img/products/kryptonite.jpg" alt="..." />
-                                </Link>
-
-                            </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                            {/* <!-- Title --> */}
-                                            <Link className="d-block fw-bold text-body" to="/products/kryptonite">
-                                                Kryptonite
-                                            </Link>
-
-                                            {/* <!-- Category --> */}
-                                            <Link className="fs-xs text-muted" href="shop.html">
-                                                Supplies
-                                            </Link>
-
-                                            </div>
-                                            <div className="col-auto">
-
-                                            {/* <!-- Price --> */}
-                                            <div className="fs-sm fw-bold text-muted">
-                                                $899.99
-                                            </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        {/* Anakin's Lightsaber */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7" >
-
-                                {/* <!-- Badge --> */}
-                                <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
-                                    New
-                                </div>
-
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productEightImg">
-
-                                    <Link className="d-block w-100" to="/products/anakin-lightsaber">
-                                        <img className="card-img-top" src="assets/img/products/anakin.png" alt="..." />
-                                    </Link>
-
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/anakin-lightsaber">
-                                                    Anakin's Lightsaber
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Tools
-                                                </a>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $39,999.99
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        {/* The Kramer */}
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7">
-
-                                {/* <!-- Badge --> */}
-                                <div className="badge bg-warning text-body card-badge card-badge-start text-uppercase">
-                                    TRENDING
-                                </div>
-
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}' id="productOneImg">
-                                    <Link className="d-block w-100" to="/products/the-kramer">
-                                        <img className="card-img-top" src="assets/img/products/the_kramer.png" alt="..." />
-                                    </Link>
-                                    {/* <a className="d-block w-100" href="product.html">
-                                    <img className="card-img-top" src="assets/img/products/product-142.jpg" alt="..." />
-                                    </a> */}
-                                </div>
-
-                                {/* <!-- Collapse --> */}
-                                <div className="card-collapse-parent">
-
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col">
-
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to="/products/the-kramer">
-                                                    The Kramer
-                                                </Link>
-
-                                                {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
-                                                    Art
-                                                </a>
-                                            </div>
-
-                                            <div className="col-auto">
-                                                {/* <!-- Price --> */}
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    $14,999.99
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* <!-- Footer --> */}
-                                    <div className="card-collapse collapse">
-                                        {/* <div className="card-footer px-0 bg-white"> */}
-                                            {/* <form> */}
-                                                {/* <div className="mb-1">
-                                                        <div className="form-check form-check-inline form-check-color">
-                                                            <input type="radio" id="productOneColorOne" name="productOneColor" className="form-check-input" data-toggle="flickity" data-target="#productOneImg" data-slide="0" style={{backgroundColor: 'beige'}} checked />
+                                                {/* Sale Price Handling */}
+                                                {product.salePrice ? (
+                                                    <>
+                                                        {/* Original Price */}
+                                                        <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
+                                                            ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                                         </div>
-                                                        <div className="form-check form-check-inline form-check-color ms-n2">
-                                                            <input type="radio" id="productOneColorTwo" name="productOneColor" className="form-check-input" data-toggle="flickity" data-target="#productOneImg" data-slide="1" style={{backgroundColor: 'black'}} />
+                                                        {/* Sale Price */}
+                                                        <div className="fs-sm fw-bold text-primary">
+                                                            ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                                         </div>
-                                                    </div> */}
-
-                                                {/* <div>
-                                                        <div className="form-check form-check-inline form-check-text fs-xs">
-                                                            <input type="radio" id="productOneSizeOne" name="sizeRadio" className="form-check-input" />
-                                                            <label className="form-check-label" htmlFor="productOneSizeOne">20mg</label>
-                                                        </div>
-                                                        <div className="form-check form-check-inline form-check-text fs-xs">
-                                                            <input type="radio" id="productOneSizeTwo" name="sizeRadio" className="form-check-input" />
-                                                            <label className="form-check-label" htmlFor="productOneSizeTwo">50mg</label>
-                                                        </div>
-                                                        <div className="form-check form-check-inline form-check-text fs-xs">
-                                                            <input type="radio" id="productOneSizeThree" name="sizeRadio" className="form-check-input" />
-                                                            <label className="form-check-label" htmlFor="productOneSizeThree">120mg</label>
-                                                        </div>
-                                                        <div className="form-check form-check-inline form-check-text fs-xs">
-                                                            <input type="radio" id="productOneSizeFour" name="sizeRadio" className="form-check-input" />
-                                                            <label className="form-check-label" htmlFor="productOneSizeFour">1g</label>
-                                                        </div>
-                                                    </div> */}
-                                            {/* </form> */}
-                                        {/* </div> */}
+                                                    </>
+                                                ) : (
+                                                    // Regular Price
+                                                    <div className="fs-sm fw-bold text-muted">
+                                                        ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-
+                        ))}
                     </div>
 
+                    
                     <div className="row">
                         <div className="col-12">
 

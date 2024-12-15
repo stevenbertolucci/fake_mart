@@ -11,6 +11,7 @@ import HarryPotterWand from './pages/Harry_Potter_Wand/harry_potter_wand';
 import Kryptonite from './pages/Kryptonite/kryptonite';
 import AnakinLightsaber from './pages/Anakin_Lightsaber/anakin_lightsaber';
 import TheKramer from './pages/The_Kramer/the_kramer';
+import ProductPage from './pages/ProductPage/productPage';
 
 // Components
 import ScrollToTop from './components/scrollToTop';
@@ -27,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/austin-powers-mojo" element={<AustinPowersMojo />} />
+          {/* <Route path="/products/austin-powers-mojo" element={<AustinPowersMojo />} />
           <Route path="/products/phased-plasma-40-watt-range" element={<PhasedPlasma />} />
           <Route path="/products/buddy-love-weight-loss-potion" element={<WeightLossPotion />} />
           <Route path="/products/declaration-of-independence" element={<DeclarationOfIndependence />} />
@@ -35,7 +36,8 @@ function App() {
           <Route path="/products/harry-potter-wand" element={<HarryPotterWand />} />
           <Route path="/products/kryptonite" element={<Kryptonite />} />
           <Route path="/products/anakin-lightsaber" element={<AnakinLightsaber />} />
-          <Route path="/products/the-kramer" element={<TheKramer />} />
+          <Route path="/products/the-kramer" element={<TheKramer />} /> */}
+          <Route path="/products/:id" element={<ProductPage />} />
         </Routes>
     </div>
     </>
