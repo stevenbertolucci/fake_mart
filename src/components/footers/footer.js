@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ classList = '' }) => {
   return (
@@ -51,10 +52,10 @@ const Footer = ({ classList = '' }) => {
               {/* Links */}
               <ul className="list-unstyled mb-7 mb-sm-0">
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/contact-us.html`}>Contact Us</a>
+                  <Link className="text-gray-300" to="/contact-us">Contact Us</Link>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/faq.html`}>FAQs</a>
+                  <Link className="text-gray-300" to="/faq">FAQs</Link>
                 </li>
                 <li>
                   <a className="text-gray-300" data-bs-toggle="modal" href="#modalSizeChart">Size Guide</a>
@@ -74,16 +75,16 @@ const Footer = ({ classList = '' }) => {
               {/* Links */}
               <ul className="list-unstyled mb-7 mb-sm-0">
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Men's Shopping</a>
+                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Art</a>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Women's Shopping</a>
+                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Documents</a>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Kids' Shopping</a>
+                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Pharmacy</a>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Discounts</a>
+                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Services</a>
                 </li>
               </ul>
             </div>

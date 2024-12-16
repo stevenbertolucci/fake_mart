@@ -9,7 +9,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light ${classList}`}>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-white border-bottom ${classList}`}>
       <div className="container">
 
         {/* Brand */}
@@ -59,7 +59,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Contact</a>
+              <Link className="nav-link" to="/contact-us">Contact</Link>
             </li>
           </ul>
 
