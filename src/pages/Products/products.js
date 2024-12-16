@@ -141,24 +141,33 @@ const Products = () => {
                                             <div className="col-auto">
 
                                             {typeof product.price === "string" ? (
-                                                <span className="text-success">{product.price}</span>
-                                            ) : product.salePrice ? (
-                                                    <>
-                                                        {/* Original Price */}
-                                                        <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
-                                                            ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                                        </div>
-                                                        {/* Sale Price */}
-                                                        <div className="fs-sm fw-bold text-primary">
-                                                            ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                                        </div>
-                                                    </>
+                                                product.price.toLowerCase().includes("free") ? (
+                                                    // Free price in green
+                                                    <span className="text-success">{product.price}</span>
+                                                ) : product.price.toLowerCase().includes("/hr") ? (
+                                                    // Hourly cost styled like regular prices
+                                                    <span className="fs-sm fw-bold text-muted">{product.price}</span>
                                                 ) : (
-                                                    // Regular Price
-                                                    <div className="fs-sm fw-bold text-muted">
+                                                    // Default handling for other strings
+                                                    <span className="fs-sm fw-bold text-muted">{product.price}</span>
+                                                )
+                                            ) : product.salePrice ? (
+                                                <>
+                                                    {/* Original Price */}
+                                                    <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
                                                         ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                                     </div>
-                                                )}
+                                                    {/* Sale Price */}
+                                                    <div className="fs-sm fw-bold text-primary">
+                                                        ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                    </div>
+                                                </>
+                                            ) : (
+                                                // Regular Price
+                                                <div className="fs-sm fw-bold text-muted">
+                                                    ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                </div>
+                                            )}
                                             </div>
                                         </div>
                                     </div>

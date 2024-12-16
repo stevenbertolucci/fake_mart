@@ -5,7 +5,8 @@ const products = [
         category: "Pharmacy",
         price: 1299.99,
         status: "NEW",
-        description: 'The essence of charm and grooviness.',
+        productStatus: "Backordered",
+        description: ['The essence of charm and grooviness.'],
         images: ["/assets/img/products/mojo.png", "/assets/img/products/1969.png", "/assets/img/products/dr.evil.jpg"],
     },
     {
@@ -13,7 +14,8 @@ const products = [
         name: 'Phased Plasma in the 40 Watt Range',
         category: "Sci-Fi",
         price: 8799.99,
-        description: 'The Terminator’s weapon of choice.',
+        productStatus: "In Stock",
+        description: ['The Terminator’s weapon of choice.'],
         images: ["/assets/img/products/phased_plasma.png", "/assets/img/products/phased_plasma_2.jpg", "/assets/img/products/phase_plasma.jpg", "/assets/img/products/pal.jpg"],
     },
     {
@@ -24,7 +26,8 @@ const products = [
         salePrice: 79.99,
         objectFit: "contain",
         status: "SALE",
-        description: 'Lose weight instantly with Buddy Love’s secret potion!',
+        productStatus: "In Stock",
+        description: ['Lose weight instantly with Buddy Love’s secret potion!'],
         images: ["/assets/img/products/before_after.png", "/assets/img/products/potion.jpg", "/assets/img/products/buddy_love.png"],
     },
     {
@@ -32,7 +35,8 @@ const products = [
         name: 'Declaration of Independence',
         category: "Documents",
         price: 7417.76,
-        description: 'The Original Copy of Declaration of Independence',
+        productStatus: "In Stock",
+        description: ['The Original Copy of Declaration of Independence'],
         images: ["/assets/img/products/declaration_of_independence.jpg", "/assets/img/products/independence.jpg", "/assets/img/products/declaration_independence.png"],
     },
     {
@@ -40,7 +44,8 @@ const products = [
         name: 'Mithril',
         category: "Clothing",
         price: 19.99,
-        description: "Frodo's choice of armor",
+        productStatus: "In Stock",
+        description: ["Frodo's choice of armor"],
         images: ["/assets/img/products/mithril.jpg", "/assets/img/products/mithril_frodo.png", "/assets/img/products/art_mithril.png"],
     },
     {
@@ -50,8 +55,9 @@ const products = [
         status: "SALE",
         price: 299.99,
         salePrice: 149.99,
+        productStatus: "In Stock",
         objectFit: "contain",
-        description: 'Wand',
+        description: ['Wand'],
         images: ["/assets/img/products/harry_potter.jpg", "/assets/img/products/harry_potter_wand.jpg", "/assets/img/products/harry_potter_first_wand.png"],
     },
     {
@@ -59,7 +65,8 @@ const products = [
         name: 'Kryptonite',
         category: "Supplies",
         price: 899.99,
-        description: "Superman's weakness",
+        productStatus: "Backordered",
+        description: ["Superman's weakness"],
         images: ["/assets/img/products/kryptonite.jpg", "/assets/img/products/kryptonite.png", "/assets/img/products/superman_kryptonite.png"],
     },
     {
@@ -68,7 +75,8 @@ const products = [
         category: "Tools",
         status: "NEW",
         price: 39999.99,
-        description: "Anakin's lightsaber",
+        productStatus: "In Stock",
+        description: ["Anakin's lightsaber"],
         images: ["/assets/img/products/anakin.png", "/assets/img/products/anakin_lightsaber.png", "/assets/img/products/anakin_lightsaber_mustafar.png"],
     },
     {
@@ -77,9 +85,10 @@ const products = [
         category: "Art",
         status: "TRENDING",
         price: 14999.99,
+        productStatus: "In Stock",
         objectFit: "contain",
         maxHeight: "800px",
-        description: 'A painting of Kramer',
+        description: ['A painting of Kramer'],
         images: ["/assets/img/products/the_kramer.png"],
     },
     {
@@ -88,7 +97,10 @@ const products = [
         category: "Education",
         status: "NEW",
         price: 9.99,
-        description: 'Courses on how to become confident like Bully Maguire',
+        description: [
+            "'You want forgiveness? Get religion. I'm gonna put some dirt in your eye. If You want the shots, I'll take the staff job, double the money.'",
+            "Strut around with confidence like Bully Maguire. This course will teach you how to be fearless and vigilant when things don't go your way. 100% satisfaction guaranteed!"
+    ],
         images: ["/assets/img/products/bully_maguire_home.png", "/assets/img/products/bully_maguire_dance.jpg", "/assets/img/products/bully_maguire_fingers.jpg", "/assets/img/products/bully_maguire_dirt.jpg"],
     },
     {
@@ -96,7 +108,8 @@ const products = [
         name: "Rose Dawson's Ocean Diamond Necklace",
         category: "Jewelry",
         price: 2500000.00,
-        description: 'The long lost Ocean Diamond Necklace',
+        productStatus: "In Stock",
+        description: ["The long lost Ocean Diamond Necklace that was thrown in the Atlantic Ocean by Rose Dawson, whose fat ass didn't share the broken door with Jack."],
         images: ["/assets/img/products/rose_dawson_necklace.png"],
     },
     {
@@ -105,7 +118,8 @@ const products = [
         category: "Pharmacy",
         status: "TRENDING",
         price: 9999.99,
-        description: 'Back to formula? DO YOU KNOW HOW MUCH I SACRIFICE?!?!?',
+        productStatus: "In Stock",
+        description: ['Back to formula? DO YOU KNOW HOW MUCH I SACRIFICE?!?!?'],
         images: ["/assets/img/products/goblin_formula.png", "/assets/img/products/goblin_formula_rage.png", ],
     },
     {
@@ -113,8 +127,16 @@ const products = [
         name: "FBI's This Website has been Seized",
         category: "Art",
         price: "Free",
-        description: "Are you doing something illegal on your website, don't worry, you will see this image on your website shortly.",
+        description: ["Are you doing something illegal on your website? Don't worry, you will see this image on your website shortly."],
         images: ["/assets/img/products/fbi_seized.png"],
+    },
+    {
+        id: 'bryan-mills-security',
+        name: "Bryan Mills Security",
+        category: "Service",
+        price: "$800/hr",
+        description: ["Need security for yourself, someone you know, or for your team? Look no further, Bryan Mills security will give you the confidence you need to roam in public. Adversaries will think twice before coming to this country, take advantage of the system and think because we are tolerant that we are weak and helpless. Their arrogance offends Bryan Mills. And for that, the rate just went up 10%. Good luck..."],
+        images: ["/assets/img/products/bryan_mills.jpg"],
     },
 ];
 

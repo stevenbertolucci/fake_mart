@@ -187,27 +187,42 @@ const ProductPage = () => {
                         {/* <!-- Price --> */}
                         <div className="mb-7">
                             
-                            {/* Price Handling */}
-                            {typeof product.price === "string" ? (
-                                // Free Price
+                        {typeof product.price === "string" ? (
+                            product.price.toLowerCase().includes("free") ? (
+                                // Free Price in green
                                 <span className="fs-lg fw-bold text-success">{product.price}</span>
-                            ) : product.status === "SALE" && product.salePrice ? (
-                                <>
-                                    {/* Original Price */}
-                                    <span className="fs-lg fw-bold text-gray-350 text-decoration-line-through">
-                                        ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                    </span>
-                                    {/* Sale Price */}
-                                    <span className="ms-1 fs-5 fw-bolder text-primary">
-                                        ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                    </span>
-                                </>
+                            ) : product.price.toLowerCase().includes("/hr") ? (
+                                // Hourly cost styled like regular prices
+                                <span className="fs-lg fw-bold text-muted">{product.price}</span>
                             ) : (
-                                // Regular Price
-                                <span className="fs-lg fw-bold text-muted">
+                                // Default handling for other strings
+                                <span className="fs-lg fw-bold text-muted">{product.price}</span>
+                            )
+                        ) : product.status === "SALE" && product.salePrice ? (
+                            <>
+                                {/* Original Price */}
+                                <span className="fs-lg fw-bold text-gray-350 text-decoration-line-through">
                                     ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                 </span>
-                            )}
+                                {/* Sale Price */}
+                                <span className="ms-1 fs-5 fw-bolder text-primary">
+                                    ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                </span>
+                            </>
+                        ) : (
+                            // Regular Price
+                            <span className="fs-lg fw-bold text-muted">
+                                ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                            </span>
+                        )}
+                        {/* Product Status */}
+                        {product.productStatus ? (
+                            product.productStatus === "In Stock" ? (
+                                <span className="fs-sm ms-1 text-success">(In Stock)</span>
+                            ) : product.productStatus === "Backordered" ? (
+                                <span className="fs-sm ms-1 text-warning">(Backordered)</span>
+                            ) : null
+                        ) : null}
                         </div>
                         
 
@@ -377,9 +392,9 @@ const ProductPage = () => {
 
                                 {/* <!-- Text --> */}
                                 <p className="text-gray-500">
-                                Won't herb first male seas, beast. Let upon, female upon third fifth every. Man subdue rule after years herb after
-                                form. And image may, morning. Behold in tree day sea that together cattle whose. Fifth gathering brought
-                                bearing. Abundantly creeping whose. Beginning form have void two. A whose.
+                                    {product.description.map((line, index) => (
+                                        <p key={index}>{line}</p>
+                                    ))}
                                 </p>
 
                             </div>
