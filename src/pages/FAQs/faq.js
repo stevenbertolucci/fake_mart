@@ -5,8 +5,7 @@ import Footer from '../../components/footers/footer';
 import Scripts from '../../components/scripts';
 import Navbar from '../../components/navbars/navbar';
 import 'flickity/css/flickity.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const FAQs = () => {
     const [activeItem, setActiveItem] = useState(null); // Store the currently active FAQ item
