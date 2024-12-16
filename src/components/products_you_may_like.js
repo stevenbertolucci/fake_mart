@@ -20,7 +20,7 @@ const ProductYouMightLike = () => {
                         <div className="card mb-7">
 
                         {/* <!-- Badge --> */}
-                        <div className="badge bg-white text-body card-badge card-badge-start text-uppercase">
+                        <div className="badge bg-dark card-badge card-badge-start text-uppercase">
                             New
                         </div>
 

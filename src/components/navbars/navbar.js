@@ -51,7 +51,7 @@ const Navbar = ({ classList = '', webRoot = process.env.PUBLIC_URL }) => {
             
             <li className="nav-item">
               {/* Toggle */}
-              <a className="nav-link" href={`${webRoot}/docs/getting-started.html`}>Blog</a>
+              <Link className="nav-link" to="/faq">FAQs</Link>
 
               {/* Menu */}
               {/* Replace this with a BlogDropdown component */}
