@@ -186,7 +186,12 @@ const ProductPage = () => {
 
                         {/* <!-- Price --> */}
                         <div className="mb-7">
-                            {product.status === "SALE" && product.salePrice ? (
+                            
+                            {/* Price Handling */}
+                            {typeof product.price === "string" ? (
+                                // Free Price
+                                <span className="fs-lg fw-bold text-success">{product.price}</span>
+                            ) : product.status === "SALE" && product.salePrice ? (
                                 <>
                                     {/* Original Price */}
                                     <span className="fs-lg fw-bold text-gray-350 text-decoration-line-through">
@@ -197,13 +202,12 @@ const ProductPage = () => {
                                         ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                     </span>
                                 </>
-                                ) : (
-                                    // Regular Price
-                                    <span className="fs-lg fw-bold text-muted">
-                                        ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                    </span>
-                                )}
-                                    <span className="fs-sm ms-1">(In Stock)</span>
+                            ) : (
+                                // Regular Price
+                                <span className="fs-lg fw-bold text-muted">
+                                    ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                </span>
+                            )}
                         </div>
                         
 

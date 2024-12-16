@@ -1,12 +1,43 @@
+import React, { useState, useEffect } from "react";
 import Footer from "../../components/footers/footer";
 import Head from "../../components/head";
 import Promo from "../../components/misc/promo";
 import Navbar from "../../components/navbars/navbar";
 import Scripts from "../../components/scripts";
-import { Link } from "react-router-dom";
+import { Link,  useLocation } from "react-router-dom";
 import products from "../../data/productsData";
 
 const Products = () => {
+     const location = useLocation();
+
+    // Initialize visibleProducts with sessionStorage or default to 12
+    const [visibleProducts, setVisibleProducts] = useState(() => {
+        const saved = sessionStorage.getItem("visibleProducts");
+        return saved ? parseInt(saved, 10) : 12;
+    });
+
+    // Function to handle "Load More"
+    const handleShowMore = () => {
+        setVisibleProducts((prev) => {
+            const updated = prev + 12;
+            sessionStorage.setItem("visibleProducts", updated); // Save to sessionStorage
+            return updated;
+        });
+    };
+
+    // Persist visibleProducts state in sessionStorage on mount
+    useEffect(() => {
+        sessionStorage.setItem("visibleProducts", visibleProducts);
+    }, [visibleProducts]);
+
+    // Reset visibleProducts only when leaving the /products routes
+    useEffect(() => {
+        return () => {
+            if (!location.pathname.startsWith("/products")) {
+                sessionStorage.removeItem("visibleProducts");
+            }
+        };
+    }, [location.pathname]);
 
     return (
         <div>
@@ -54,7 +85,7 @@ const Products = () => {
                     {/* Dynamic Product Cards */}
                     <div className="row">
 
-                    {products.map((product) => (
+                    {products.slice(0, visibleProducts).map((product) => (
 
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3" key={product.id}>
 
@@ -93,7 +124,7 @@ const Products = () => {
                                     {/* <!-- Body --> */}
                                     <div className="card-body px-0 pb-0 bg-white">
                                         <div className="row gx-0">
-                                            <div className="col">
+                                            <div className="col" >
 
                                                 {/* <!-- Title --> */}
                                                 <Link className="d-block fw-bold text-body" to={`/products/${product.id}`}>
@@ -109,8 +140,9 @@ const Products = () => {
 
                                             <div className="col-auto">
 
-                                                {/* Sale Price Handling */}
-                                                {product.salePrice ? (
+                                            {typeof product.price === "string" ? (
+                                                <span className="text-success">{product.price}</span>
+                                            ) : product.salePrice ? (
                                                     <>
                                                         {/* Original Price */}
                                                         <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
@@ -146,18 +178,34 @@ const Products = () => {
 
                                     {/* <!-- Caption --> */}
                                     <p className="fs-sm text-muted">
-                                    Showing 9 of 24 products
+                                    Showing {Math.min(visibleProducts, products.length)} of {products.length} products
                                     </p>
 
                                     {/* <!-- Progress --> */}
                                     <div className="progress mx-auto mb-7" style={{maxWidth: '250px'}}>
-                                        <div className="progress-bar bg-dark" role="progressbar" style={{width: '33%'}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div 
+                                            className="progress-bar bg-dark" 
+                                            role="progressbar" 
+                                            style={{
+                                                width: `${(visibleProducts / products.length) * 100}%`
+                                            }} 
+                                            aria-valuenow={(visibleProducts / products.length) * 100}
+                                            aria-valuemin="0" 
+                                            aria-valuemax="100"></div>
                                     </div>
 
-                                    {/* <!-- Button --> */}
-                                    <a className="btn btn-sm btn-outline-dark" href="#!">
-                                    Load more
-                                    </a>
+                                    {visibleProducts < products.length ? (
+                                        <button
+                                            className="btn btn-sm btn-outline-dark"
+                                            onClick={handleShowMore}
+                                        >
+                                            Load more
+                                        </button>
+                                    ) : (
+                                        <p className="fs-sm text-muted">
+                                            All products are displayed.
+                                        </p>
+                                    )}
 
                                 </div>
                             </div>

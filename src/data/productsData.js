@@ -108,6 +108,14 @@ const products = [
         description: 'Back to formula? DO YOU KNOW HOW MUCH I SACRIFICE?!?!?',
         images: ["/assets/img/products/goblin_formula.png", "/assets/img/products/goblin_formula_rage.png", ],
     },
+    {
+        id: 'fbi-seized-website',
+        name: "FBI's This Website has been Seized",
+        category: "Art",
+        price: "Free",
+        description: "Are you doing something illegal on your website, don't worry, you will see this image on your website shortly.",
+        images: ["/assets/img/products/fbi_seized.png"],
+    },
 ];
 
 export default products;
