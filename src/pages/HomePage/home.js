@@ -31,9 +31,9 @@ const Home = () => {
                     <div className="card-body mt-auto py-8">
 
                     {/* <!-- Button --> */}
-                    <a className="btn btn-white stretched-link" href="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/categories/Pharmacy">
                         Shop Pharmacy <i className="fe fe-arrow-right ms-2"></i>
-                    </a>
+                    </Link>
 
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Home = () => {
                     <div className="card-body mt-auto py-8">
 
                     {/* <!-- Button --> */}
-                    <Link className="btn btn-white stretched-link" to="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/categories/Sci-Fi">
                         Shop Sci-Fi <i className="fe fe-arrow-right ms-2"></i>
                     </Link>
 
@@ -75,7 +75,7 @@ const Home = () => {
                     <div className="card-body mt-auto py-8">
 
                     {/* <!-- Button --> */}
-                    <Link className="btn btn-white stretched-link" to="shop.html">
+                    <Link className="btn btn-white stretched-link" to="/categories/Tools">
                         Shop Tools <i className="fe fe-arrow-right ms-2"></i>
                     </Link>
 

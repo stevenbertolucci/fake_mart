@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/HomePage/home';
 import Products from './pages/Products/products';
 import ProductPage from './pages/ProductPage/productPage';
+import CategoryPage from './pages/CategoryPage/categoryPage';
 import FAQs from './pages/FAQs/faq';
 import ContactUs from './pages/Contact_Us/contact_us';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/products/anakin-lightsaber" element={<AnakinLightsaber />} />
           <Route path="/products/the-kramer" element={<TheKramer />} /> */}
           <Route path="/products/:id" element={<ProductPage />} />
+          <Route path="/categories/:category" element={<CategoryPage />} />
           <Route path="/faq" element={<FAQs />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

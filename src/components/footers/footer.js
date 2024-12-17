@@ -75,16 +75,16 @@ const Footer = ({ classList = '' }) => {
               {/* Links */}
               <ul className="list-unstyled mb-7 mb-sm-0">
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Art</a>
+                  <Link className="text-gray-300" to="/categories/Art">Art</Link>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Documents</a>
+                  <Link className="text-gray-300" to="/categories/Documents">Documents</Link>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Pharmacy</a>
+                  <Link className="text-gray-300" to="/categories/Pharmacy">Pharmacy</Link>
                 </li>
                 <li>
-                  <a className="text-gray-300" href={`${process.env.PUBLIC_URL}/shop.html`}>Services</a>
+                  <Link className="text-gray-300" to="/categories/Services">Services</Link>
                 </li>
               </ul>
             </div>

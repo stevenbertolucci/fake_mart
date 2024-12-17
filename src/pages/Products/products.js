@@ -132,9 +132,9 @@ const Products = () => {
                                                 </Link>
 
                                                 {/* <!-- Category --> */}
-                                                <a className="fs-xs text-muted" href="shop.html">
+                                                <Link className="fs-xs text-muted" to={`/categories/${product.category}`}>
                                                     {product.category}
-                                                </a>
+                                                </Link>
 
                                             </div>
 
