@@ -7,6 +7,8 @@ import Scripts from "../../components/scripts";
 import { Link,  useLocation } from "react-router-dom";
 import products from "../../data/productsData";
 
+// This file displays all the products from productsData.js file
+
 const Products = () => {
      const location = useLocation();
 
@@ -85,97 +87,97 @@ const Products = () => {
                     {/* Dynamic Product Cards */}
                     <div className="row">
 
-                    {products.slice(0, visibleProducts).map((product) => (
+                        {products.slice(0, visibleProducts).map((product) => (
 
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3" key={product.id}>
+                            <div className="col-6 col-sm-6 col-md-4 col-lg-3" key={product.id}>
 
-                            {/* <!-- Card --> */}
-                            <div className="card mb-7">
+                                {/* <!-- Card --> */}
+                                <div className="card mb-7">
 
-                                {/* <!-- Badge --> */}
-                                {product.status && (
-                                <div className={
-                                    product.status === "SALE" || product.status === "NEW"
-                                    ? "badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg"
+                                    {/* <!-- Badge --> */}
+                                    {product.status && (
+                                    <div className={
+                                        product.status === "SALE" || product.status === "NEW"
+                                        ? "badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg"
 
-                                    : product.status === "TRENDING"
-                                    ? "badge bg-warning text-body card-badge card-badge-start text-uppercase"
-                                    : ""
-                                    }
-                                >
-                                    {product.status}
-                                </div>
-                                )}
+                                        : product.status === "TRENDING"
+                                        ? "badge bg-warning text-body card-badge card-badge-start text-uppercase"
+                                        : ""
+                                        }
+                                    >
+                                        {product.status}
+                                    </div>
+                                    )}
 
-                                {/* <!-- Image --> */}
-                                <div className="card-img" data-flickity='{"draggable": false}'>
-                                    <Link className="d-block w-100" to={`/products/${product.id}`}>
-                                        <img 
-                                            className="card-img-top" 
-                                            src={product.images[0]} 
-                                            alt={product.name} 
-                                        />
-                                    </Link>
-                                </div>
+                                    {/* <!-- Image --> */}
+                                    <div className="card-img" data-flickity='{"draggable": false}'>
+                                        <Link className="d-block w-100" to={`/products/${product.id}`}>
+                                            <img 
+                                                className="card-img-top" 
+                                                src={product.images[0]} 
+                                                alt={product.name} 
+                                            />
+                                        </Link>
+                                    </div>
 
-                                 {/* <!-- Collapse --> */}
-                                 <div className="card-collapse-parent">
+                                    {/* <!-- Collapse --> */}
+                                    <div className="card-collapse-parent">
 
-                                    {/* <!-- Body --> */}
-                                    <div className="card-body px-0 pb-0 bg-white">
-                                        <div className="row gx-0">
-                                            <div className="col" >
+                                        {/* <!-- Body --> */}
+                                        <div className="card-body px-0 pb-0 bg-white">
+                                            <div className="row gx-0">
+                                                <div className="col" >
 
-                                                {/* <!-- Title --> */}
-                                                <Link className="d-block fw-bold text-body" to={`/products/${product.id}`}>
-                                                    {product.name}
-                                                </Link>
+                                                    {/* <!-- Title --> */}
+                                                    <Link className="d-block fw-bold text-body" to={`/products/${product.id}`}>
+                                                        {product.name}
+                                                    </Link>
 
-                                                {/* <!-- Category --> */}
-                                                <Link className="fs-xs text-muted" to={`/categories/${product.category}`}>
-                                                    {product.category}
-                                                </Link>
+                                                    {/* <!-- Category --> */}
+                                                    <Link className="fs-xs text-muted" to={`/categories/${product.category}`}>
+                                                        {product.category}
+                                                    </Link>
 
-                                            </div>
-
-                                            <div className="col-auto">
-
-                                            {typeof product.price === "string" ? (
-                                                product.price.toLowerCase().includes("free") ? (
-                                                    // Free price in green
-                                                    <span className="text-success">{product.price}</span>
-                                                ) : product.price.toLowerCase().includes("/hr") ? (
-                                                    // Hourly cost styled like regular prices
-                                                    <span className="fs-sm fw-bold text-muted">{product.price}</span>
-                                                ) : (
-                                                    // Default handling for other strings
-                                                    <span className="fs-sm fw-bold text-muted">{product.price}</span>
-                                                )
-                                            ) : product.salePrice ? (
-                                                <>
-                                                    {/* Original Price */}
-                                                    <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
-                                                        ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                                    </div>
-                                                    {/* Sale Price */}
-                                                    <div className="fs-sm fw-bold text-primary">
-                                                        ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                                    </div>
-                                                </>
-                                            ) : (
-                                                // Regular Price
-                                                <div className="fs-sm fw-bold text-muted">
-                                                    ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                                 </div>
-                                            )}
+
+                                                <div className="col-auto">
+
+                                                    {typeof product.price === "string" ? (
+                                                        product.price.toLowerCase().includes("free") ? (
+                                                            // Free price in green
+                                                            <span className="text-success">{product.price}</span>
+                                                        ) : product.price.toLowerCase().includes("/hr") ? (
+                                                            // Hourly cost styled like regular prices
+                                                            <span className="fs-sm fw-bold text-muted">{product.price}</span>
+                                                        ) : (
+                                                            // Default handling for other strings
+                                                            <span className="fs-sm fw-bold text-muted">{product.price}</span>
+                                                        )
+                                                    ) : product.salePrice ? (
+                                                        <>
+                                                            {/* Original Price */}
+                                                            <div className="fs-xs fw-bold text-gray-350 text-decoration-line-through">
+                                                                ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                            </div>
+                                                            {/* Sale Price */}
+                                                            <div className="fs-sm fw-bold text-primary">
+                                                                ${product.salePrice.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                            </div>
+                                                        </>
+                                                    ) : (
+                                                        // Regular Price
+                                                        <div className="fs-sm fw-bold text-muted">
+                                                            ${product.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                        </div>
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
 
                     
                     <div className="row">
