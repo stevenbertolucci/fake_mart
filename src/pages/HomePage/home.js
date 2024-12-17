@@ -210,7 +210,7 @@ const Home = () => {
                     </h6>
 
                     {/* <!-- Heading --> */}
-                    <h2 className="mb-4">Best Picks 2019</h2>
+                    <h2 className="mb-4">Best Picks 2025</h2>
 
                     {/* <!-- Subheading --> */}
                     <p className="mb-10 text-gray-500">
@@ -224,23 +224,23 @@ const Home = () => {
                 <div className="col-12 col-md-5 col-lg-4 d-flex flex-column">
 
                     {/* <!-- Card --> */}
-                    <div className="card mb-7 text-white" style={{ minHeight: '400px', backgroundImage: `url('./assets/img/products/product-1.jpg')` }}>
+                    <div className="card mb-7 text-white" style={{ minHeight: '400px' }}>
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                    <div className="card-bg-img bg-cover" style={{ minHeight: '400px', backgroundImage: `url('./assets/img/products/product-1.jpg')` }} />
+                    <div className="card-bg-img bg-cover" style={{ minHeight: '400px', backgroundImage: `url('./assets/img/products/documents-2.png')` }} />
                     </div>
 
                     {/* <!-- Body --> */}
                     <div className="card-body my-auto text-center">
 
                         {/* <!-- Heading --> */}
-                        <h4 className="mb-0">Bags Collection</h4>
+                        <h4 className="mb-0">Documents</h4>
 
                         {/* <!-- Link --> */}
-                        <a className="btn btn-link stretched-link text-reset" href="shop.html">
-                        Shop Now <i className="fe fe-arrow-right ms-2"></i>
-                        </a>
+                        <Link className="btn btn-link stretched-link text-reset px-0" href="shop.html">
+                        Documents <i className="fe fe-arrow-right ms-2"></i>
+                        </Link>
 
                     </div>
 
@@ -251,24 +251,24 @@ const Home = () => {
             <div className="col-12 col-md-7 col-lg-8 d-flex flex-column">
 
                     {/* <!-- Card --> */}
-                    <div className="card mb-7 text-body" style={{minHeight: '400px'}}>
+                    <div className="card mb-7 text-white" style={{minHeight: '400px'}}>
 
                         {/* <!-- Background --> */}
                         <div className="card-bg">
-                            <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-2.jpg')`}}></div>
+                            <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/services-2.png')`}}></div>
                         </div>
 
                         {/* <!-- Body --> */}
                         <div className="card-body my-auto px-md-10 text-center text-md-start">
 
-                            {/* <!-- Circle --> */}
+                            {/* <!-- Circle -->
                             <div className="card-circle card-circle-lg card-circle-end">
                             <strong>save</strong>
                             <span className="fs-4 fw-bold">30%</span>
-                            </div>
+                            </div> */}
 
                             {/* <!-- Heading --> */}
-                            <h4 className="mb-0">Printed men’s Shirts</h4>
+                            <h4 className="mb-0">Services</h4>
 
                             {/* <!-- Link --> */}
                             <a className="btn btn-link stretched-link px-0 text-reset" href="shop.html">
@@ -287,14 +287,14 @@ const Home = () => {
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-3.jpg')`}}></div>
+                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/pharmacy-2.png')`}}></div>
                     </div>
 
                     {/* <!-- Body --> */}
                     <div className="card-body my-auto px-md-10 text-center text-md-start">
 
                         {/* <!-- Heading --> */}
-                        <h4 className="mb-0">Basic women’s Dresses</h4>
+                        <h4 className="mb-0">Pharmacy</h4>
 
                         {/* <!-- Link --> */}
                         <a className="btn btn-link stretched-link px-0 text-reset" href="shop.html">
@@ -313,14 +313,14 @@ const Home = () => {
 
                     {/* <!-- Background --> */}
                     <div className="card-bg">
-                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/product-4.jpg')`}}></div>
+                        <div className="card-bg-img bg-cover" style={{backgroundImage: `url('./assets/img/products/software.jpg')`}}></div>
                     </div>
 
                     {/* <!-- Body --> */}
                     <div className="card-body my-auto text-center">
 
                         {/* <!-- Heading --> */}
-                        <h4 className="mb-0">Sweatshirts</h4>
+                        <h4 className="mb-0">Software</h4>
 
                         {/* <!-- Link --> */}
                         <a className="btn btn-link stretched-link text-reset" href="shop.html">
@@ -864,7 +864,7 @@ const Home = () => {
 
                     {/* <!-- Link  --> */}
                     <div className="mt-7 text-center">
-                    <a className="link-underline" href="#!">Discover more</a>
+                    <Link className="link-underline" to="/products">Discover more</Link>
                     </div>
 
                 </div>
@@ -880,7 +880,7 @@ const Home = () => {
 
                     {/* <!-- Heading --> */}
                     <h3 className="mb-7">
-                    Get -50% from <br />Summer Collection
+                    Get 50% from <br />Summer Collection
                     </h3>
 
                     {/* <!-- Counter --> */}
