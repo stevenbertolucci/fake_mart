@@ -37,11 +37,6 @@ const Footer = ({ classList = '' }) => {
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
-                <li className="list-inline-item">
-                  <a href="#!" className="text-gray-350">
-                    <i className="fab fa-medium"></i>
-                  </a>
-                </li>
               </ul>
             </div>
 

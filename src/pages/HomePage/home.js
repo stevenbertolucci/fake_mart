@@ -404,7 +404,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Pharmacy</a>
+                            <Link className="text-muted" to="/categories/Pharmacy">Pharmacy</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -464,7 +464,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Sci-Fi</a>
+                            <Link className="text-muted" to="/categories/Sci-Fi">Sci-Fi</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -529,7 +529,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Tools</a>
+                            <Link className="text-muted" to="/categories/Tools">Tools</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -593,7 +593,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Art</a>
+                            <Link className="text-muted" to="/categories/Art">Art</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -652,7 +652,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Software</a>
+                            <Link className="text-muted" to="/categories/Software">Software</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -717,7 +717,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Pharmacy</a>
+                            <Link className="text-muted" to="/categories/Pharmacy">Pharmacy</Link>
                             </div>
 
                             {/* <!-- Title --> */}
@@ -778,12 +778,12 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Clothing</a>
+                            <Link className="text-muted" to="/categories/Clothing">Clothing</Link>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <Link className="text-body" to="/products">
+                            <Link className="text-body" to="/products/mithril">
                                 Mithril
                             </Link>
                             </div>
@@ -843,7 +843,7 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Education</a>
+                            <Link className="text-muted" to="/categories/Education">Education</Link>
                             </div>
 
                             {/* <!-- Title --> */}

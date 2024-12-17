@@ -56,7 +56,7 @@ const CategoryPage = () => {
                         <div className="col-12">
 
                             {/* <!-- Heading --> */}
-                            <h3 className="mb-10 text-center">Category: {category}</h3>
+                            <h3 className="mb-10 text-center">{category}</h3>
 
                         </div>
                     </div>
