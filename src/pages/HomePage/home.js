@@ -344,13 +344,15 @@ const Home = () => {
 
                     {/* <!-- Heading --> */}
                     <h2 className="mb-4 text-center">Top month Sellers</h2>
+                    <br/>
+                    <br/>
 
-                    {/* <!-- Nav --> */}
+                    {/* <!-- Nav -->
                     <div className="nav justify-content-center mb-10">
                     <a className="nav-link active" href="#topSellersTab" data-bs-toggle="tab">Women</a>
                     <a className="nav-link" href="#topSellersTab" data-bs-toggle="tab">Men</a>
                     <a className="nav-link" href="#topSellersTab" data-bs-toggle="tab">Kids</a>
-                    </div>
+                    </div> */}
 
                 </div>
                 </div>
@@ -363,18 +365,18 @@ const Home = () => {
                         <div className="card mb-7">
 
                         {/* <!-- Badge --> */}
-                        <div className="badge bg-white text-body card-badge card-badge-start text-uppercase">
-                            New
+                        <div className="badge bg-warning text-body card-badge text-uppercase">
+                            TRENDING
                         </div>
 
                         {/* <!-- Image --> */}
                         <div className="card-img">
 
                             {/* <!-- Image --> */}
-                            <a className="card-img-hover" href="product.html">
-                            <img className="card-img-top card-img-back" src="./assets/img/products/product-120.jpg" alt="..."/>
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-5.jpg" alt="..."/>
-                            </a>
+                            <Link className="card-img-hover" to="/products/green-goblin-formula">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/goblin_formula_rage.png" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/goblin_formula.png" alt="..."/>
+                            </Link>
 
                             {/* <!-- Actions --> */}
                             <div className="card-actions">
@@ -402,19 +404,19 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Shoes</a>
+                            <a className="text-muted" href="shop.html">Pharmacy</a>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Leather mid-heel Sandals
-                            </a>
+                            <Link className="text-body" to="/products/green-goblin-formula">
+                            Oscorp's Green Goblin Formula
+                            </Link>
                             </div>
 
                             {/* <!-- Price --> */}
                             <div className="fw-bold text-muted">
-                            $129.00
+                            $9,999.99
                             </div>
 
                         </div>
@@ -431,10 +433,10 @@ const Home = () => {
                         <div className="card-img">
 
                             {/* <!-- Image --> */}
-                            <a className="card-img-hover" href="product.html">
-                            <img className="card-img-top card-img-back" src="./assets/img/products/product-121.jpg" alt="..."/>
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-6.jpg" alt="..."/>
-                            </a>
+                            <Link className="card-img-hover" to="/products/phased-plasma-40-watt-range">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/pal.jpg" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/phased_plasma.png" alt="..."/>
+                            </Link>
 
                             {/* <!-- Actions --> */}
                             <div className="card-actions">
@@ -462,19 +464,207 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Dresses</a>
+                            <a className="text-muted" href="shop.html">Sci-Fi</a>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Cotton floral print Dress
-                            </a>
+                            <Link className="text-body" to="/products/phased-plasma-40-watt-range">
+                                Phased Plasma in the 40 Watt Range
+                            </Link>
                             </div>
 
                             {/* <!-- Price --> */}
                             <div className="fw-bold text-muted">
-                            $40.00
+                            $8,799.99
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                    <div className="col-6 col-md-4 col-lg-3">
+
+                        {/* <!-- Card --> */}
+                        <div className="card mb-7">
+
+                        {/* <!-- Badge --> */}
+                        <div className="badge bg-dark card-badge card-badge-start text-uppercase">
+                            NEW
+                        </div>
+
+                        {/* <!-- Image --> */}
+                        <div className="card-img">
+
+                            {/* <!-- Image --> */}
+                            <Link className="card-img-hover" to="/products/anakin-lightsaber">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/anakin_lightsaber.png" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/anakin.png" alt="..."/>
+                            </Link>
+
+                            {/* <!-- Actions --> */}
+                            <div className="card-actions">
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                                <i className="fe fe-eye"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-shopping-cart"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-heart"></i>
+                                </button>
+                            </span>
+                            </div>
+
+                        </div>
+
+                        {/* <!-- Body --> */}
+                        <div className="card-body px-0">
+
+                            {/* <!-- Category --> */}
+                            <div className="fs-xs">
+                            <a className="text-muted" href="shop.html">Tools</a>
+                            </div>
+
+                            {/* <!-- Title --> */}
+                            <div className="fw-bold">
+                            <Link className="text-body" to="/products/anakin-lightsaber">
+                                Anakin Skywalker's Lightsaber
+                            </Link>
+                            </div>
+
+                            {/* <!-- Price --> */}
+                            <div className="fw-bold text-muted">
+                            $39,999.99
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                    <div className="col-6 col-md-4 col-lg-3">
+
+                        {/* <!-- Card --> */}
+                        <div className="card mb-7">
+
+                        {/* <!-- Badge --> */}
+                        <div className="badge bg-warning text-body card-badge text-uppercase">
+                            TRENDING
+                        </div>
+
+                        {/* <!-- Image --> */}
+                        <div className="card-img">
+
+                            {/* <!-- Image --> */}
+                            <Link to="/products/the-kramer">
+                            <img className="card-img-top card-img-front" src="./assets/img/products/the_kramer.png" alt="..."/>
+                            </Link>
+
+                            {/* <!-- Actions --> */}
+                            <div className="card-actions">
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                                <i className="fe fe-eye"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-shopping-cart"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-heart"></i>
+                                </button>
+                            </span>
+                            </div>
+
+                        </div>
+
+                        {/* <!-- Body --> */}
+                        <div className="card-body px-0">
+
+                            {/* <!-- Category --> */}
+                            <div className="fs-xs">
+                            <a className="text-muted" href="shop.html">Art</a>
+                            </div>
+
+                            {/* <!-- Title --> */}
+                            <div className="fw-bold">
+                            <Link className="text-body" to="/products/the-kramer">
+                                The Kramer
+                            </Link>
+                            </div>
+
+                            {/* <!-- Price --> */}
+                            <div className="fw-bold text-muted">
+                            $14,999.99
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                    <div className="col-6 col-md-4 col-lg-3">
+
+                        {/* <!-- Card --> */}
+                        <div className="card mb-7">
+
+                        {/* <!-- Image --> */}
+                        <div className="card-img">
+
+                            {/* <!-- Image --> */}
+                            <Link to="/products/morris-worm">
+                            <img className="card-img-top card-img-front" src="./assets/img/products/morris-worm.png" alt="..."/>
+                            </Link>
+
+                            {/* <!-- Actions --> */}
+                            <div className="card-actions">
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                                <i className="fe fe-eye"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-shopping-cart"></i>
+                                </button>
+                            </span>
+                            <span className="card-action">
+                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                                <i className="fe fe-heart"></i>
+                                </button>
+                            </span>
+                            </div>
+
+                        </div>
+
+                        {/* <!-- Body --> */}
+                        <div className="card-body px-0">
+
+                            {/* <!-- Category --> */}
+                            <div className="fs-xs">
+                            <a className="text-muted" href="shop.html">Software</a>
+                            </div>
+
+                            {/* <!-- Title --> */}
+                            <div className="fw-bold">
+                            <Link className="text-body" to="/products/morris-worm">
+                                Morris Worm Source Code
+                            </Link>
+                            </div>
+
+                            {/* <!-- Price --> */}
+                            <div className="fw-bold text-muted">
+                            $99.99
                             </div>
 
                         </div>
@@ -496,10 +686,10 @@ const Home = () => {
                         <div className="card-img">
 
                             {/* <!-- Image --> */}
-                            <a className="card-img-hover" href="product.html">
-                            <img className="card-img-top card-img-back" src="./assets/img/products/product-122.jpg" alt="..."/>
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-7.jpg" alt="..."/>
-                            </a>
+                            <Link className="card-img-hover" to="/products/buddy-love-weight-loss-potion">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/buddy_love.png" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/before_after.png" alt="..."/>
+                            </Link>
 
                             {/* <!-- Actions --> */}
                             <div className="card-actions">
@@ -527,20 +717,20 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Shoes</a>
+                            <a className="text-muted" href="shop.html">Pharmacy</a>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Leather Sneakers
-                            </a>
+                            <Link className="text-body" to="/products/buddy-love-weight-loss-potion">
+                                Buddy Love's Weight Loss Potion
+                            </Link>
                             </div>
 
                             {/* <!-- Price --> */}
                             <div className="fw-bold">
-                            <span className="fs-xs text-gray-350 text-decoration-line-through">$85.00</span>
-                            <span className="text-primary">$85.00</span>
+                            <span className="fs-xs text-gray-350 text-decoration-line-through">$99.00</span>
+                            <span className="text-primary"> $79.00</span>
                             </div>
 
                         </div>
@@ -557,9 +747,10 @@ const Home = () => {
                         <div className="card-img">
 
                             {/* <!-- Image --> */}
-                            <a href="#!">
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-8.jpg" alt="..."/>
-                            </a>
+                            <Link className="card-img-hover" to="/products/mithril">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/mithril_frodo.png" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/mithril.jpg" alt="..."/>
+                            </Link>
 
                             {/* <!-- Actions --> */}
                             <div className="card-actions">
@@ -587,78 +778,19 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Tops</a>
+                            <a className="text-muted" href="shop.html">Clothing</a>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Cropped cotton Top
-                            </a>
+                            <Link className="text-body" to="/products">
+                                Mithril
+                            </Link>
                             </div>
 
                             {/* <!-- Price --> */}
                             <div className="fw-bold text-muted">
-                            $29.00
-                            </div>
-
-                        </div>
-
-                        </div>
-
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-
-                        {/* <!-- Card --> */}
-                        <div className="card mb-7">
-
-                        {/* <!-- Image --> */}
-                        <div className="card-img">
-
-                            {/* <!-- Image --> */}
-                            <a href="#!">
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-9.jpg" alt="..."/>
-                            </a>
-
-                            {/* <!-- Actions --> */}
-                            <div className="card-actions">
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
-                                <i className="fe fe-eye"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-shopping-cart"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-heart"></i>
-                                </button>
-                            </span>
-                            </div>
-
-                        </div>
-
-                        {/* <!-- Body --> */}
-                        <div className="card-body px-0">
-
-                            {/* <!-- Category --> */}
-                            <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Dresses</a>
-                            </div>
-
-                            {/* <!-- Title --> */}
-                            <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Floral print midi Dress
-                            </a>
-                            </div>
-
-                            {/* <!-- Price --> */}
-                            <div className="fw-bold text-muted">
-                            $50.00
+                            $19.00
                             </div>
 
                         </div>
@@ -672,133 +804,7 @@ const Home = () => {
                         <div className="card mb-7">
 
                         {/* <!-- Badge --> */}
-                        <div className="badge bg-dark card-badge card-badge-start text-uppercase">
-                            Sale
-                        </div>
-
-                        {/* <!-- Image --> */}
-                        <div className="card-img">
-
-                            {/* <!-- Image --> */}
-                            <a className="card-img-hover" href="product.html">
-                            <img className="card-img-top card-img-back" src="./assets/img/products/product-123.jpg" alt="..."/>
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-10.jpg" alt="..."/>
-                            </a>
-
-                            {/* <!-- Actions --> */}
-                            <div className="card-actions">
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
-                                <i className="fe fe-eye"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-shopping-cart"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-heart"></i>
-                                </button>
-                            </span>
-                            </div>
-
-                        </div>
-
-                        {/* <!-- Body --> */}
-                        <div className="card-body px-0">
-
-                            {/* <!-- Category --> */}
-                            <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Bags</a>
-                            </div>
-
-                            {/* <!-- Title --> */}
-                            <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Suede cross body Bag
-                            </a>
-                            </div>
-
-                            {/* <!-- Price --> */}
-                            <div className="fw-bold">
-                            <span className="fs-xs text-gray-350 text-decoration-line-through">$79.00</span>
-                            <span className="text-primary">$49.00</span>
-                            </div>
-
-                        </div>
-
-                        </div>
-
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-
-                        {/* <!-- Card --> */}
-                        <div className="card mb-7">
-
-                        {/* <!-- Image --> */}
-                        <div className="card-img">
-
-                            {/* <!-- Image --> */}
-                            <a className="card-img-hover" href="product.html">
-                            <img className="card-img-top card-img-back" src="./assets/img/products/product-124.jpg" alt="..."/>
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-11.jpg" alt="..."/>
-                            </a>
-
-                            {/* <!-- Actions --> */}
-                            <div className="card-actions">
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
-                                <i className="fe fe-eye"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-shopping-cart"></i>
-                                </button>
-                            </span>
-                            <span className="card-action">
-                                <button className="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
-                                <i className="fe fe-heart"></i>
-                                </button>
-                            </span>
-                            </div>
-
-                        </div>
-
-                        {/* <!-- Body --> */}
-                        <div className="card-body px-0">
-
-                            {/* <!-- Category --> */}
-                            <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Skirts</a>
-                            </div>
-
-                            {/* <!-- Title --> */}
-                            <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Printed A-line Skirt
-                            </a>
-                            </div>
-
-                            {/* <!-- Price --> */}
-                            <div className="fw-bold text-muted">
-                            $79.00
-                            </div>
-
-                        </div>
-
-                        </div>
-
-                    </div>
-                    <div className="col-6 col-md-4 col-lg-3">
-
-                        {/* <!-- Card --> */}
-                        <div className="card mb-7">
-
-                        {/* <!-- Badge --> */}
-                        <div className="badge bg-white text-body card-badge card-badge text-uppercase">
+                        <div className="badge bg-dark card-badge card-badge-start text-uppercase letter-spacing-lg">
                             New
                         </div>
 
@@ -806,9 +812,10 @@ const Home = () => {
                         <div className="card-img">
 
                             {/* <!-- Image --> */}
-                            <a href="#!">
-                            <img className="card-img-top card-img-front" src="./assets/img/products/product-12.jpg" alt="..."/>
-                            </a>
+                            <Link className='card-img-hover' to="/products/bully-maguire-courses">
+                            <img className="card-img-top card-img-back" src="./assets/img/products/bully_maguire_dirt.jpg" alt="..."/>
+                            <img className="card-img-top card-img-front" src="./assets/img/products/bully_maguire_home.png" alt="..."/>
+                            </Link>
 
                             {/* <!-- Actions --> */}
                             <div className="card-actions">
@@ -836,19 +843,19 @@ const Home = () => {
 
                             {/* <!-- Category --> */}
                             <div className="fs-xs">
-                            <a className="text-muted" href="shop.html">Shoes</a>
+                            <a className="text-muted" href="shop.html">Education</a>
                             </div>
 
                             {/* <!-- Title --> */}
                             <div className="fw-bold">
-                            <a className="text-body" href="product.html">
-                                Heel strappy Sandals
-                            </a>
+                            <Link className="text-body" to="/products/bully-maguire-courses">
+                                Bully Maguire Courses
+                            </Link>
                             </div>
 
                             {/* <!-- Price --> */}
                             <div className="fw-bold text-muted">
-                            $90.00
+                            $9.99
                             </div>
 
                         </div>

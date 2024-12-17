@@ -36,7 +36,7 @@ const products = [
         category: "Documents",
         price: 7417.76,
         productStatus: "In Stock",
-        description: ['The Original Copy of Declaration of Independence'],
+        description: ['The Original Copy of Declaration of Independence.'],
         images: ["/assets/img/products/declaration_of_independence.jpg", "/assets/img/products/independence.jpg", "/assets/img/products/declaration_independence.png"],
     },
     {
@@ -45,7 +45,7 @@ const products = [
         category: "Clothing",
         price: 19.99,
         productStatus: "In Stock",
-        description: ["Frodo's choice of armor"],
+        description: ["Frodo's choice of armor."],
         images: ["/assets/img/products/mithril.jpg", "/assets/img/products/mithril_frodo.png", "/assets/img/products/art_mithril.png"],
     },
     {
@@ -57,7 +57,7 @@ const products = [
         salePrice: 149.99,
         productStatus: "In Stock",
         objectFit: "contain",
-        description: ['Wand'],
+        description: ['Wand.'],
         images: ["/assets/img/products/harry_potter.jpg", "/assets/img/products/harry_potter_wand.jpg", "/assets/img/products/harry_potter_first_wand.png"],
     },
     {
@@ -66,7 +66,7 @@ const products = [
         category: "Supplies",
         price: 899.99,
         productStatus: "Backordered",
-        description: ["Superman's weakness"],
+        description: ["Superman's weakness."],
         images: ["/assets/img/products/kryptonite.jpg", "/assets/img/products/kryptonite.png", "/assets/img/products/superman_kryptonite.png"],
     },
     {
@@ -76,7 +76,7 @@ const products = [
         status: "NEW",
         price: 39999.99,
         productStatus: "In Stock",
-        description: ["Anakin's lightsaber"],
+        description: ["Anakin's lightsaber."],
         images: ["/assets/img/products/anakin.png", "/assets/img/products/anakin_lightsaber.png", "/assets/img/products/anakin_lightsaber_mustafar.png"],
     },
     {
@@ -88,7 +88,7 @@ const products = [
         productStatus: "In Stock",
         objectFit: "contain",
         maxHeight: "800px",
-        description: ['A painting of Kramer'],
+        description: ['A painting of Kramer.'],
         images: ["/assets/img/products/the_kramer.png"],
     },
     {
